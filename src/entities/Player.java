@@ -18,10 +18,10 @@ public class Player extends Entity {
     private int playerAction = ATTACK;
     private boolean moving = false, attacking = false;
     private boolean left, up, right, down;
-    private float playerSpeech = 1.0f;
+    private float playerSpeech = 2.0f;
 
-    public Player(float x, float y) {
-        super(x,y);
+    public Player(float x, float y, int width, int height) {
+        super(x,y, width, height);
         loadAnimations();
     }
     public void update() {
@@ -31,7 +31,7 @@ public class Player extends Entity {
     }
 
     public void render(Graphics g) {
-        g.drawImage(characBoy[playerAction][aniIndex], (int) x, (int) y, 64*5, 40*5, null);
+        g.drawImage(characBoy[playerAction][aniIndex], (int) x, (int) y, width, height, null);
     }
     private void updateAnimationTick() {
         aniTick++;
