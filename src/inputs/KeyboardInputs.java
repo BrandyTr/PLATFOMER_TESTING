@@ -20,9 +20,9 @@ public class KeyboardInputs implements KeyListener {
     @Override
     public void keyReleased(KeyEvent e) {
         switch (e.getKeyCode()){
-            case KeyEvent.VK_UP:
-                gamePanel.getGame().getPlayer().setUp(false);
-                break;
+            // case KeyEvent.VK_UP:
+            //gamePanel.getGame().getPlayer().setUp(false);
+            //break;
             case KeyEvent.VK_DOWN:
                 gamePanel.getGame().getPlayer().setDown(false);
                 break;
@@ -35,6 +35,9 @@ public class KeyboardInputs implements KeyListener {
             case KeyEvent.VK_SPACE:
                 gamePanel.getGame().getPlayer().setAttacking(false);
                 break;
+            case KeyEvent.VK_UP:
+                gamePanel.getGame().getPlayer().setJump(false);
+                break;
         }
     }
 
@@ -42,9 +45,9 @@ public class KeyboardInputs implements KeyListener {
     public void keyPressed(KeyEvent e) {
 
         switch (e.getKeyCode()){
-            case KeyEvent.VK_UP:
-                gamePanel.getGame().getPlayer().setUp(true);
-                break;
+            //case KeyEvent.VK_UP:
+            // gamePanel.getGame().getPlayer().setUp(true);
+            //break;
             case KeyEvent.VK_DOWN:
                 gamePanel.getGame().getPlayer().setDown(true);
                 break;
@@ -56,6 +59,9 @@ public class KeyboardInputs implements KeyListener {
                 break;
             case KeyEvent.VK_SPACE:
                 gamePanel.getGame().getPlayer().setAttacking(true);
+                break;
+            case KeyEvent.VK_UP:
+                gamePanel.getGame().getPlayer().setJump(true);
                 break;
         }
     }
