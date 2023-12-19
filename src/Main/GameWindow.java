@@ -1,6 +1,8 @@
 package Main;
 
 import javax.swing.*;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowFocusListener;
 
 public class GameWindow {
     private JFrame jframe;
@@ -12,8 +14,22 @@ public class GameWindow {
         jframe.setTitle("Platformer by Brandy");
 
         jframe.setResizable(false);
-        jframe.pack(); //fit the size to the preferred size
-        jframe.setLocationRelativeTo(null); //set location at center screen
+        jframe.pack();
         jframe.setVisible(true);
+        jframe.addWindowFocusListener(new WindowFocusListener() {
+
+            @Override
+            public void windowLostFocus(WindowEvent e) {
+                gamePanel.getGame().windowFocusLost();
+            }
+
+            @Override
+            public void windowGainedFocus(WindowEvent e) {
+                // TODO Auto-generated method stub
+
+            }
+        });
+
     }
+
 }

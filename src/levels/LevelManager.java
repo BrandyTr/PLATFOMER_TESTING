@@ -1,10 +1,10 @@
 package levels;
 
-import Main.Game;
-import utilz.LoadSave;
-
 import java.awt.*;
 import java.awt.image.BufferedImage;
+
+import Main.Game;
+import utilz.LoadSave;
 
 public class LevelManager {
     private Game game;
@@ -42,4 +42,9 @@ public class LevelManager {
 
     public void update() {
     }
+
+    public Level getCurrentLevel() {
+        return levelOne;
+    }
+
 }
