@@ -213,6 +213,6 @@ public class Player extends Entity {
     }
 
     public void setJump(boolean jump) {
-        this.jump=jump;
+        this.jump = jump;
     }
 }

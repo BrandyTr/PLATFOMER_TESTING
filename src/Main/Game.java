@@ -1,9 +1,11 @@
 package Main;
 
-import entities.Player;
-import levels.LevelManager;
-
+import gamestates.Gamestate;
+import gamestates.Playing;
+import java.awt.Graphics;
+import gamestates.Menu;
 import java.awt.*;
+
 
 public class Game implements Runnable {
     private GameWindow gameWindow;
@@ -11,8 +13,8 @@ public class Game implements Runnable {
     private Thread gameThread;
     private final int FPS_SET = 120;
     private final int UPS_SET = 200; //updates per second
-    private Player player;
-    private LevelManager levelManager;
+    private Playing playing;
+    private Menu menu;
     //Game Window
     public final static int TILES_DEFAULT_SIZE = 16;
     public final static float SCALE = 4f;
@@ -31,9 +33,8 @@ public class Game implements Runnable {
         startGameLoop();
     }
     private void initClasses() {
-        levelManager = new LevelManager(this);
-        player = new Player(200, 200, (int) (64 * SCALE), (int) (40 * SCALE));
-        player.loadlvlData(levelManager.getCurrentLevel().getLevelData());
+        menu = new Menu(this);
+        playing = new Playing(this);
     }
 
     private void startGameLoop() {
@@ -41,13 +42,37 @@ public class Game implements Runnable {
         gameThread.start();
     }
 
-    public void updates() {
-        levelManager.update();
-        player.update();
+    public void update() {
+
+        switch (Gamestate.state) {
+            case MENU:
+                menu.update();
+                break;
+            case PLAYING:
+                playing.update();
+                break;
+            case OPTIONS:
+            case QUIT:
+            default:
+                System.exit(0);
+                break;
+        }
     }
     public void render(Graphics g) {
-        levelManager.draw(g);
-        player.render(g);
+            switch (Gamestate.state) {
+                case MENU:
+                    menu.draw(g);
+                    break;
+                case PLAYING:
+                    playing.draw(g);
+                    break;
+//                case OPTIONS:
+//                    break;
+//                case QUIT:
+//                    break;
+                default:
+                    break;
+            }
     }
     @Override //GAME LOOP
     public void run() {
@@ -73,7 +98,7 @@ public class Game implements Runnable {
             previousTime = currentTime;
 
             if(deltaU >= 1) {
-                updates();
+                update();
                 updates++;
                 deltaU--;
             }
@@ -100,9 +125,14 @@ public class Game implements Runnable {
         }
     }
     public void windowFocusLost() {
-        player.resetDirBooleans();
+        if (Gamestate.state == Gamestate.PLAYING)
+            playing.getPlayer().resetDirBooleans();
     }
-    public Player getPlayer() {
-        return player;
+    public Menu getMenu() {
+        return menu;
+    }
+
+    public Playing getPlaying() {
+        return playing;
     }
 }
