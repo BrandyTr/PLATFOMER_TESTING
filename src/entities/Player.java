@@ -20,7 +20,7 @@ public class Player extends Entity {
     private int playerAction = ATTACK;
     private boolean moving = false, attacking = false;
     private boolean left, up, right, down,jump;
-    private float playerSpeech = 2.0f;
+    private float playerSpeech = 1.0f;
 
     private int[][] lvlData;
     private float xDrawOffset = 7 * Game.SCALE;

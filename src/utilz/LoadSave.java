@@ -20,7 +20,7 @@ public class LoadSave {
     public static final String URM_BUTTONS = "Pause/urm_buttons.png";
     public static final String VOLUME_BUTTONS = "Pause/volume_buttons.png";
     public static final String MENU_BACKGROUND_IMG = "Menu/background_menu.png";
-    public static final String PLAYING_BG_IMG = "Tiles/background_PLAYNG_SCREEN.png";
+    public static final String PLAYING_BG_IMG = "Tiles/background_PLAYING_SCREEN.png";
 
 
 
