@@ -58,8 +58,8 @@ public class LoadSave {
         for(int j = 0; j < img.getHeight(); j++)
             for (int i = 0; i < img.getWidth(); i++) {
                 Color color = new Color(img.getRGB(i, j));
-                int value = color.getGreen();
-                if (value == FOX)
+                int value = color.getRed();
+                if (value == 201)
                     list.add(new Fox(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
             }
         return list;
@@ -71,8 +71,8 @@ public class LoadSave {
         for(int j = 0; j < img.getHeight(); j++)
             for (int i = 0; i < img.getWidth(); i++) {
                 Color color = new Color(img.getRGB(i, j));
-                int value = color.getGreen();
-                if (value == SNAIL)
+                int value = color.getRed();
+                if (value == 202)
                     list.add(new Snail(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
             }
         return list;

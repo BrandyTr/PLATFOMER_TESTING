@@ -13,6 +13,8 @@ public class Constants {
         public static final int FOX_HEIGHT_DEFAULT = 32;
         public static final int FOX_WIDTH = (int)(FOX_WIDTH_DEFAULT * Game.SCALE);
         public static final int FOX_HEIGHT = (int)(FOX_HEIGHT_DEFAULT * Game.SCALE);
+        public static final int FOX_DRAWOFFSET_X = (int)(5 * Game.SCALE);
+        public static final int FOX_DRAWOFFSET_Y = (int)(10 * Game.SCALE);
 
         public static final int SNAIL = 1;
         public static final int S_RUNNING = 0;
@@ -23,6 +25,8 @@ public class Constants {
         public static final int SNAIL_HEIGHT_DEFAULT = 32;
         public static final int SNAIL_WIDTH = (int)(SNAIL_WIDTH_DEFAULT * Game.SCALE);
         public static final int SNAIL_HEIGHT = (int)(SNAIL_HEIGHT_DEFAULT * Game.SCALE);
+        public static final int SNAIL_DRAWOFFSET_X = (int)(10 * Game.SCALE);
+        public static final int SNAIL_DRAWOFFSET_Y = (int)(10 * Game.SCALE);
 
         public static int GetSpriteAmount(int enemy_type, int enemy_state){
             switch(enemy_type){

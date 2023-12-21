@@ -27,11 +27,11 @@ public class EnemyManager {
         snails = LoadSave.GetSnails();
     }
 
-    public void update(){
+    public void update(int[][] lvlData){
         for(Fox c : foxes)
-            c.update();
+            c.update(lvlData);
         for(Snail c : snails)
-            c.update();
+            c.update(lvlData);
     }
 
     public void draw(Graphics g, int xLvlOffset){
