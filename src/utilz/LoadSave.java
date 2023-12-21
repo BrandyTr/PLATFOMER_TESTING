@@ -1,12 +1,17 @@
 package utilz;
 
 import Main.Game;
+import entities.Fox;
+import entities.Snail;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+
+import static utilz.Constants.EnemyConstant.*;
 
 public class LoadSave {
     public static final String PLAYER_ATLAS = "Charac/player_boy.png";
@@ -21,6 +26,9 @@ public class LoadSave {
     public static final String VOLUME_BUTTONS = "Pause/volume_buttons.png";
     public static final String MENU_BACKGROUND_IMG = "Menu/background_menu.png";
     public static final String PLAYING_BG_IMG = "Tiles/background_PLAYING_SCREEN.png";
+    public static final String FOX_ENEMY = "Enemy/enemy_fox.png";
+    public static final String SNAIL_ENEMY = "Enemy/enemy_snail.png";
+
 
 
 
@@ -43,20 +51,46 @@ public class LoadSave {
         }
         return img;
     }
+
+    public static ArrayList<Fox> GetFoxes(){
+        BufferedImage img = GetSpriteAtlas(LEVEL_ONE_ATLAS);
+        ArrayList<Fox> list = new ArrayList<>();
+        for(int j = 0; j < img.getHeight(); j++)
+            for (int i = 0; i < img.getWidth(); i++) {
+                Color color = new Color(img.getRGB(i, j));
+                int value = color.getGreen();
+                if (value == FOX)
+                    list.add(new Fox(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
+            }
+        return list;
+    }
+
+    public static ArrayList<Snail> GetSnails(){
+        BufferedImage img = GetSpriteAtlas(LEVEL_ONE_ATLAS);
+        ArrayList<Snail> list = new ArrayList<>();
+        for(int j = 0; j < img.getHeight(); j++)
+            for (int i = 0; i < img.getWidth(); i++) {
+                Color color = new Color(img.getRGB(i, j));
+                int value = color.getGreen();
+                if (value == SNAIL)
+                    list.add(new Snail(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
+            }
+        return list;
+    }
+
+
     public static int[][] GetLevelData() {
         BufferedImage img = GetSpriteAtlas(LEVEL_ONE_ATLAS);
         int[][] lvlData = new int[img.getHeight()][img.getWidth()];
 
-        for(int j = 0; j < img.getHeight(); j++) {
+        for(int j = 0; j < img.getHeight(); j++)
             for (int i = 0; i < img.getWidth(); i++) {
                 Color color = new Color(img.getRGB(i, j));
                 int value = color.getRed();
-                if (value >= 200) {
+                if (value >= 200)
                     value = 0;
-                }
                 lvlData[j][i] = value; //about 255 colors
             }
-        }
         return lvlData;
     }
 }

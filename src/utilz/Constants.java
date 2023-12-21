@@ -4,6 +4,52 @@ import Main.Game;
 
 public class Constants {
 
+    public static class EnemyConstant{
+        public static final int FOX = 0;
+        public static final int F_IDLE = 0;
+        public static final int F_RUNNING = 1;
+        public static final int F_DEAD = 2;
+        public static final int FOX_WIDTH_DEFAULT = 32;
+        public static final int FOX_HEIGHT_DEFAULT = 32;
+        public static final int FOX_WIDTH = (int)(FOX_WIDTH_DEFAULT * Game.SCALE);
+        public static final int FOX_HEIGHT = (int)(FOX_HEIGHT_DEFAULT * Game.SCALE);
+
+        public static final int SNAIL = 1;
+        public static final int S_RUNNING = 0;
+        public static final int S_HIDE = 1;
+        public static final int S_UNHIDE = 2;
+        public static final int S_DEAD = 3;
+        public static final int SNAIL_WIDTH_DEFAULT = 48;
+        public static final int SNAIL_HEIGHT_DEFAULT = 32;
+        public static final int SNAIL_WIDTH = (int)(SNAIL_WIDTH_DEFAULT * Game.SCALE);
+        public static final int SNAIL_HEIGHT = (int)(SNAIL_HEIGHT_DEFAULT * Game.SCALE);
+
+        public static int GetSpriteAmount(int enemy_type, int enemy_state){
+            switch(enemy_type){
+                case FOX:
+                    switch(enemy_state){
+                        case F_RUNNING:
+                            return 6;
+                        case F_IDLE:
+                            return 4;
+                        case F_DEAD:
+                        default:
+                            return 3;
+                    }
+                case SNAIL:
+                    switch(enemy_state){
+                        case S_RUNNING:
+                        case S_HIDE:
+                        case S_UNHIDE:
+                        case S_DEAD:
+                            return 8;
+                    }
+            }
+            return 0;
+        }
+
+    }
+
     public static class UI {
         public static class Buttons { //Button size
             public static final int B_WIDTH_DEFAULT = 96;
