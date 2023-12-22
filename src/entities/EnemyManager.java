@@ -1,10 +1,12 @@
 package entities;
 
+import Main.Game;
 import gamestates.Playing;
 import utilz.LoadSave;
 import static utilz.Constants.EnemyConstant.*;
 
 import java.awt.*;
+import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
@@ -27,11 +29,13 @@ public class EnemyManager {
         snails = LoadSave.GetSnails();
     }
 
-    public void update(int[][] lvlData){
-        for(Fox c : foxes)
-            c.update(lvlData);
-        for(Snail c : snails)
-            c.update(lvlData);
+    public void update(int[][] lvlData, Player player){
+        for(Fox f : foxes)
+            if(f. isActive())
+                f.update(lvlData, player);
+        for(Snail s : snails)
+            if(s. isActive())
+                s.update(lvlData, player);
     }
 
     public void draw(Graphics g, int xLvlOffset){
@@ -40,13 +44,34 @@ public class EnemyManager {
     }
 
     private void drawFoxes(Graphics g, int xLvlOffset) {
-        for(Fox c : foxes)
-            g.drawImage(foxArr[c.getEmenyState()][c.getAniIndex()], (int)c.getHitbox().x - xLvlOffset, (int)c.getHitbox().y, FOX_WIDTH, FOX_HEIGHT, null);
+        for (Fox f : foxes)
+            if(f. isActive()) {
+            g.drawImage(foxArr[f.getEmenyState()][f.getAniIndex()], (int) (f.getHitbox().x - xLvlOffset -(8 * Game.SCALE)), (int) (f.getHitbox().y - (12*Game.SCALE)), FOX_WIDTH , FOX_HEIGHT, null);
+            f.drawHitbox(g, xLvlOffset);
+            f.drawAttackBox(g, xLvlOffset);
+        }
     }
 
     private void drawSnails(Graphics g, int xLvlOffset) {
-        for(Snail c : snails)
-            g.drawImage(snailArr[c.getEmenyState()][c.getAniIndex()], (int)c.getHitbox().x - xLvlOffset, (int)c.getHitbox().y, SNAIL_WIDTH, SNAIL_HEIGHT, null);
+        for(Snail s : snails)
+            if(s. isActive()) {
+            g.drawImage(snailArr[s.getEmenyState()][s.getAniIndex()], (int) (s.getHitbox().x - xLvlOffset - (10 * Game.SCALE)), (int) (s.getHitbox().y - (12 * Game.SCALE)), SNAIL_WIDTH, SNAIL_HEIGHT, null);
+            s.drawHitbox(g, xLvlOffset);
+            s.drawAttackBox(g, xLvlOffset);
+        }
+    }
+
+    public void checkEnemyHit(Rectangle2D.Float attackBox){
+        for(Fox f : foxes)
+            if(attackBox.intersects(f.getHitbox())){
+                f.hurt(20);
+                return;
+            }
+        for(Snail s : snails)
+            if(attackBox.intersects(s.getHitbox())){
+                s.hurt(10);
+                return;
+            }
     }
 
     private void loadEnemyImgs() {
@@ -62,5 +87,10 @@ public class EnemyManager {
             for(int i = 0; i < snailArr[j].length; i++)
                 snailArr[j][i] = temp2.getSubimage(i * SNAIL_WIDTH_DEFAULT, j * SNAIL_HEIGHT_DEFAULT, SNAIL_WIDTH_DEFAULT, SNAIL_HEIGHT_DEFAULT);
 
+    }
+
+    public void resetAllEnemies(){
+        for(Fox c : foxes)
+            c.resetEnemy();
     }
 }

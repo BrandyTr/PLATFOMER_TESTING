@@ -2,6 +2,8 @@ package utilz;
 
 import Main.Game;
 
+import static utilz.Constants.EnemyConstant.*;
+
 public class Constants {
 
     public static class EnemyConstant{
@@ -18,8 +20,8 @@ public class Constants {
 
         public static final int SNAIL = 1;
         public static final int S_RUNNING = 0;
-        public static final int S_HIDE = 1;
-        public static final int S_UNHIDE = 2;
+        public static final int S_IDLE = 1;
+        public static final int S_UNIDLE = 2;
         public static final int S_DEAD = 3;
         public static final int SNAIL_WIDTH_DEFAULT = 48;
         public static final int SNAIL_HEIGHT_DEFAULT = 32;
@@ -43,8 +45,8 @@ public class Constants {
                 case SNAIL:
                     switch(enemy_state){
                         case S_RUNNING:
-                        case S_HIDE:
-                        case S_UNHIDE:
+                        case S_IDLE:
+                        case S_UNIDLE:
                         case S_DEAD:
                             return 8;
                     }
@@ -53,6 +55,30 @@ public class Constants {
         }
 
     }
+
+    public static int GetMaxHealth(int enemy_type) {
+        switch (enemy_type){
+            case FOX:
+                return 50;
+            case SNAIL:
+                return 60;
+            default:
+                return 1;
+
+        }
+    }
+
+    public static int GetEnemyDmg(int enemy_type){
+        switch (enemy_type) {
+            case FOX:
+                return 10;
+            case SNAIL:
+                return 10;
+            default:
+                return 0;
+        }
+    }
+
 
     public static class UI {
         public static class Buttons { //Button size

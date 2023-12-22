@@ -14,7 +14,7 @@ public abstract class Entity {
         this.width = width;
         this.height = height;
     }
-    protected void drawHitbox(Graphics g, int xLvlOffset){
+    public void drawHitbox(Graphics g, int xLvlOffset){
         g.setColor(Color.pink);
         g.drawRect((int) hitbox.x - xLvlOffset, (int) hitbox.y, (int) hitbox.width, (int) hitbox.height);
 

@@ -28,9 +28,7 @@ public class LoadSave {
     public static final String PLAYING_BG_IMG = "Tiles/background_PLAYING_SCREEN.png";
     public static final String FOX_ENEMY = "Enemy/enemy_fox.png";
     public static final String SNAIL_ENEMY = "Enemy/enemy_snail.png";
-
-
-
+    public static final String STATUS_BAR = "Charac/health_power_bar.png";
 
 
     public static BufferedImage GetSpriteAtlas(String filename) {
@@ -58,8 +56,8 @@ public class LoadSave {
         for(int j = 0; j < img.getHeight(); j++)
             for (int i = 0; i < img.getWidth(); i++) {
                 Color color = new Color(img.getRGB(i, j));
-                int value = color.getRed();
-                if (value == 201)
+                int value = color.getGreen();
+                if (value == FOX)
                     list.add(new Fox(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
             }
         return list;
@@ -71,8 +69,8 @@ public class LoadSave {
         for(int j = 0; j < img.getHeight(); j++)
             for (int i = 0; i < img.getWidth(); i++) {
                 Color color = new Color(img.getRGB(i, j));
-                int value = color.getRed();
-                if (value == 202)
+                int value = color.getGreen();
+                if (value == SNAIL)
                     list.add(new Snail(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
             }
         return list;
