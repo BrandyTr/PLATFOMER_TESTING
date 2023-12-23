@@ -24,12 +24,14 @@ public class Player extends Entity {
     private boolean left, up, right, down,jump;
     private float playerSpeech = 1.0f;
     private int[][] lvlData;
+    // (0,0) -> (7,8)
     private float xDrawOffset = 7 * Game.SCALE;
-    private float yDrawOffSet= 9 * Game.SCALE;
-    private float airSpeed=0f;
-    private float gravity= 0.04f* Game.SCALE;
+    private float yDrawOffSet= 8 * Game.SCALE;
+    //Jump, Gravity
+    private float airSpeed = 0f;
+    private float gravity = 0.04f * Game.SCALE; //lower gravity => higher jump
     private float jumpSpeed= -2.25f* Game.SCALE;
-    private float fallSpeedAfterCollision= 0.5f * Game.SCALE;
+    private float fallSpeedAfterCollision= 0.5f * Game.SCALE; //in case player hit roof
     private boolean inAir= false;
 
     //StatusBarUI
@@ -60,7 +62,7 @@ public class Player extends Entity {
         super(x,y, width, height);
         this.playing = playing;
         loadAnimations();
-        initHitbox(x,y,15*Game.SCALE, 9*Game.SCALE);
+        initHitbox(x,y,15 * Game.SCALE, 18 * Game.SCALE);
         initAttackBox();
     }
 
@@ -104,7 +106,7 @@ public class Player extends Entity {
 
     public void render(Graphics g, int lvlOffset) {
         g.drawImage(characBoy[playerAction][aniIndex], (int)(hitbox.x - xDrawOffset) -lvlOffset + flipX, (int)(hitbox.y - yDrawOffSet), width * flipW, height, null);
-        drawHitbox(g,lvlOffset);
+        //drawHitbox(g,lvlOffset);
         drawAttackbox(g, lvlOffset);
         drawUI(g);
     }
@@ -136,18 +138,22 @@ public class Player extends Entity {
     public void setAnimations() {
 
         int startAni = playerAction;
-
+        //Moving
         if(moving) {
             playerAction = RUNNING;
         } else {
             playerAction = IDLE;
         }
+
+        //Jumping
         if(inAir){
             if(airSpeed<0)
                 playerAction = JUMP;
             else
-                playerAction = IDLE;
+                playerAction = FALLING;
         }
+
+        //Attacking
         if (attacking) {
             playerAction = ATTACK;
         }
@@ -162,8 +168,9 @@ public class Player extends Entity {
     public void updatePos() {
         moving = false;
 
-        if(jump)
+        if(jump) {
             jump();
+        }
 
         //if (!left && !right && !inAir)
           //  return;
@@ -179,6 +186,7 @@ public class Player extends Entity {
 
         if (left) {
             xSpeed -= playerSpeech;
+            //say moving is true if it can move somewhere
             flipX = 116;
             flipW = -1;
         }
@@ -198,22 +206,24 @@ public class Player extends Entity {
             if(CanMoveHere(hitbox.x, hitbox.y+ airSpeed, hitbox.width, hitbox.height, lvlData)){
                 hitbox.y += airSpeed;
                 airSpeed += gravity;
+                //gravity < 0 => slow down because going up
+                //going down => gravity increase
                 updateXPos(xSpeed);
             }
             else{
                 hitbox.y= GetEntityYPosUnderRoofOrAboveFloor(hitbox, airSpeed);
-                if(airSpeed>0)
+                if(airSpeed>0) {
                     resetInAir();
-                else
-                    airSpeed= fallSpeedAfterCollision;
+                }
+                else {
+                    airSpeed = fallSpeedAfterCollision;
+                }
                 updateXPos(xSpeed);
             }
-
-        }else
+        }else { //if not in air => check only x position
             updateXPos(xSpeed);
+        }
         moving=true;
-
-
     }
 
     private void jump() {
@@ -231,8 +241,7 @@ public class Player extends Entity {
     private void updateXPos(float xSpeed) {
         if(CanMoveHere(hitbox.x +xSpeed, hitbox.y, hitbox.width, hitbox.height, lvlData)){
             hitbox.x+=xSpeed;
-        }
-        else{
+        } else{ //collision with something
             hitbox.x= GetEntityXPosNextToWall(hitbox, xSpeed);
         }
     }
@@ -249,7 +258,7 @@ public class Player extends Entity {
     private void loadAnimations() {
         BufferedImage img = LoadSave.GetSpriteAtlas(LoadSave.PLAYER_ATLAS);
 
-        characBoy = new BufferedImage[5][6];
+        characBoy = new BufferedImage[6][6];
         for (int j = 0; j < characBoy.length; j++ ) {
             for (int i = 0; i < characBoy[j].length; i++) {
                 characBoy[j][i] = img.getSubimage(i * 64, j * 40, 64, 40);
