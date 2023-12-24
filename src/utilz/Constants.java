@@ -56,30 +56,6 @@ public class Constants {
 
     }
 
-    public static int GetMaxHealth(int enemy_type) {
-        switch (enemy_type){
-            case FOX:
-                return 50;
-            case SNAIL:
-                return 60;
-            default:
-                return 1;
-
-        }
-    }
-
-    public static int GetEnemyDmg(int enemy_type){
-        switch (enemy_type) {
-            case FOX:
-                return 10;
-            case SNAIL:
-                return 10;
-            default:
-                return 0;
-        }
-    }
-
-
     public static class UI {
         public static class Buttons { //Button size
             public static final int B_WIDTH_DEFAULT = 96;
