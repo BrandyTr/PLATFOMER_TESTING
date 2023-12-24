@@ -2,8 +2,17 @@ package utilz;
 
 
 
+import java.awt.*;
 import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+
 import Main.Game;
+import entities.Fox;
+import entities.Snail;
+
+import static utilz.Constants.EnemyConstant.FOX;
+import static utilz.Constants.EnemyConstant.SNAIL;
 
 public class HelpMethods {
     public static boolean CanMoveHere(float x, float y, float width, float height, int [][]lvlData){
@@ -116,5 +125,43 @@ public class HelpMethods {
                 if(IsTileSolid(firstXTile + i, yTile, lvlData))
                     return true;*/
 
+    }
+
+    public static int[][] GetLevelData(BufferedImage img) {
+        int[][] lvlData = new int[img.getHeight()][img.getWidth()];
+
+        for(int j = 0; j < img.getHeight(); j++)
+            for (int i = 0; i < img.getWidth(); i++) {
+                Color color = new Color(img.getRGB(i, j));
+                int value = color.getRed();
+                if (value >= 200)
+                    value = 0;
+                lvlData[j][i] = value; //about 255 colors
+            }
+        return lvlData;
+    }
+
+    public static ArrayList<Fox> GetFoxes(BufferedImage img){
+        ArrayList<Fox> list = new ArrayList<>();
+        for(int j = 0; j < img.getHeight(); j++)
+            for (int i = 0; i < img.getWidth(); i++) {
+                Color color = new Color(img.getRGB(i, j));
+                int value = color.getGreen();
+                if (value == FOX)
+                    list.add(new Fox(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
+            }
+        return list;
+    }
+
+    public static ArrayList<Snail> GetSnails(BufferedImage img){
+        ArrayList<Snail> list = new ArrayList<>();
+        for(int j = 0; j < img.getHeight(); j++)
+            for (int i = 0; i < img.getWidth(); i++) {
+                Color color = new Color(img.getRGB(i, j));
+                int value = color.getGreen();
+                if (value == SNAIL)
+                    list.add(new Snail(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
+            }
+        return list;
     }
 }

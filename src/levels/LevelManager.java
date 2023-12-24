@@ -5,16 +5,28 @@ import utilz.LoadSave;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class LevelManager {
     private Game game;
     private BufferedImage[] levelSprite;
-    private Level levelOne;
+    private ArrayList<Level> levels;
+    private int lvlIndex = 0;
+
+
     public LevelManager(Game game) {
         this.game = game;
         //levelSprite = LoadSave.GetSpriteAtlas(LoadSave.LEVEL_ATLAS);
         importOutsideSprites();
-        levelOne = new Level(LoadSave.GetLevelData());
+        levels = new ArrayList<>();
+        buildAllLevels();
+    }
+
+    private void buildAllLevels() {
+        BufferedImage[] allLevels = LoadSave.GetAllLevels();
+        for (BufferedImage img : allLevels) {
+            levels.add(new Level(img));
+        }
     }
 
     private void importOutsideSprites() {
@@ -33,8 +45,8 @@ public class LevelManager {
     public void draw(Graphics g, int lvlOffset) {
 
         for (int j = 0; j < Game.TILES_IN_HEIGHT; j++) {
-            for (int i = 0; i < levelOne.getLevelData()[0].length; i++) {
-                int index = levelOne.getSpriteIndex(i, j);
+            for (int i = 0; i < levels.get(lvlIndex).getLevelData()[0].length; i++) {
+                int index = levels.get(lvlIndex).getSpriteIndex(i, j);
                 g.drawImage(levelSprite[index], Game.TILES_SIZE * i - lvlOffset, Game.TILES_SIZE * j, Game.TILES_SIZE, Game.TILES_SIZE, null);
             }
         }
@@ -43,6 +55,9 @@ public class LevelManager {
     public void update() {
     }
     public Level getCurrentLevel(){
-        return levelOne;
+        return levels.get(lvlIndex);
+    }
+    public int getAmountOfLevels() {
+        return levels.size();
     }
 }

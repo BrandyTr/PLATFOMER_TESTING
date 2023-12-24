@@ -7,8 +7,11 @@ import entities.Snail;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import static utilz.Constants.EnemyConstant.*;
@@ -17,7 +20,6 @@ public class LoadSave {
     public static final String PLAYER_ATLAS = "Charac/player_boy.png";
     public static final String LEVEL_ATLAS = "Tiles/outside_tiles.png";
     //public static final String LEVEL_ONE_ATLAS = "Tiles/level_one_data.png";
-    public static final String LEVEL_ONE_ATLAS = "Tiles/level_one_data_long.png";
     public static final String MENU_BUTTONS = "Menu/button_atlas.png";
     public static final String MENU_BACKGROUND = "Menu/menu_background.png";
     public static final String PAUSE_BACKGROUND = "Pause/pause_menu.png";
@@ -29,6 +31,7 @@ public class LoadSave {
     public static final String FOX_ENEMY = "Enemy/enemy_fox.png";
     public static final String SNAIL_ENEMY = "Enemy/enemy_snail.png";
     public static final String STATUS_BAR = "Charac/health_power_bar.png";
+    public static final String COMPLETED_IMG = "Menu/completed_sprite.png";
 
 
     public static BufferedImage GetSpriteAtlas(String filename) {
@@ -50,45 +53,44 @@ public class LoadSave {
         return img;
     }
 
-    public static ArrayList<Fox> GetFoxes(){
-        BufferedImage img = GetSpriteAtlas(LEVEL_ONE_ATLAS);
-        ArrayList<Fox> list = new ArrayList<>();
-        for(int j = 0; j < img.getHeight(); j++)
-            for (int i = 0; i < img.getWidth(); i++) {
-                Color color = new Color(img.getRGB(i, j));
-                int value = color.getGreen();
-                if (value == FOX)
-                    list.add(new Fox(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
+    public static BufferedImage[] GetAllLevels() {
+        URL url = LoadSave.class.getResource("/Levels");
+        File file = null;
+
+        try {
+            file= new File(url.toURI());
+            //url: check location, uri: the actual resource in this case
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
+        }
+        File[] files = file.listFiles();
+        File[] fileSorted = new File[files.length];
+
+        for(int i = 0; i < fileSorted.length; i++) {
+            for(int j = 0; j < files.length; j++) {
+                if(files[j].getName().equals((i + 1) + ".png")) {
+                    fileSorted[i] = files[j];
+                }
             }
-        return list;
-    }
+        }
+        /*for (File f : files) {
+            System.out.println("file: " + f.getName());
+        }
 
-    public static ArrayList<Snail> GetSnails(){
-        BufferedImage img = GetSpriteAtlas(LEVEL_ONE_ATLAS);
-        ArrayList<Snail> list = new ArrayList<>();
-        for(int j = 0; j < img.getHeight(); j++)
-            for (int i = 0; i < img.getWidth(); i++) {
-                Color color = new Color(img.getRGB(i, j));
-                int value = color.getGreen();
-                if (value == SNAIL)
-                    list.add(new Snail(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
+        for (File f : files) {
+            System.out.println("file: " + f.getName());
+        }*/ // => need to remove
+
+        BufferedImage[] imgs = new BufferedImage[fileSorted.length];
+
+        for (int i = 0; i < imgs.length; i++) {
+            try {
+                imgs[i] = ImageIO.read(fileSorted[i]);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        return list;
-    }
+        }
 
-
-    public static int[][] GetLevelData() {
-        BufferedImage img = GetSpriteAtlas(LEVEL_ONE_ATLAS);
-        int[][] lvlData = new int[img.getHeight()][img.getWidth()];
-
-        for(int j = 0; j < img.getHeight(); j++)
-            for (int i = 0; i < img.getWidth(); i++) {
-                Color color = new Color(img.getRGB(i, j));
-                int value = color.getRed();
-                if (value >= 200)
-                    value = 0;
-                lvlData[j][i] = value; //about 255 colors
-            }
-        return lvlData;
+        return imgs;
     }
 }

@@ -97,7 +97,7 @@ public class Constants {
 
         public static class URMButtons {
             public static final int URM_DEFAULT_SIZE = 32;
-            public static final int URM_SIZE = (int) (URM_DEFAULT_SIZE * 1.5f);
+            public static final int URM_SIZE = (int) (URM_DEFAULT_SIZE * 3f);
         }
 
         public static class VolumeButtons{
