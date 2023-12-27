@@ -2,6 +2,7 @@ package entities;
 
 import Main.Game;
 import gamestates.Playing;
+import levels.Level;
 import utilz.LoadSave;
 import static utilz.Constants.EnemyConstant.*;
 
@@ -19,11 +20,10 @@ public class EnemyManager {
     public EnemyManager(Playing playing){
         this.playing = playing;
         loadEnemyImgs();
-        addEnemies();
     }
 
-    private void addEnemies() {
-        foxes = LoadSave.GetFoxes();
+    public void loadEnemies(Level level) {
+        foxes = level.getFoxes();
     }
 
     public void update(int[][] lvlData, Player player){

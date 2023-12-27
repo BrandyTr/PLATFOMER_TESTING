@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 import static utilz.HelpMethods.GetFoxes;
-
+import static utilz.HelpMethods.GetLevelData;
 
 
 public class Level {
@@ -39,6 +39,7 @@ public class Level {
     }
 
     private void creatLevelData() {
+        lvlData = GetLevelData(img);
 
     }
 

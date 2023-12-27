@@ -147,8 +147,6 @@ public abstract class Enemy extends Entity{
         currentHealth = maxHealth;
         if(enemyType == FOX)
             newState(F_IDLE);
-        if(enemyType == SNAIL)
-            newState(S_IDLE);
         active = true;
         fallSpeed = 0;
     }

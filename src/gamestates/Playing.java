@@ -47,7 +47,13 @@ public class Playing extends State implements Statemethods {
         loadStartLevel();
     }
 
+    public void loadNextLevel() {
+        resetAll();
+        levelManager.loadNextLevel();
+    }
+
     private void loadStartLevel() {
+        enemyManager.loadEnemies(levelManager.getCurrentLevel());
     }
 
     private void calcLvlOffset() {
@@ -223,6 +229,10 @@ public class Playing extends State implements Statemethods {
         }
     }
 
+    public void seMaxLvlOffset(int lvlOffset) {
+        this.maxLvlOffsetX = lvlOffset;
+    }
+
     public void unPauseGame() {
         paused = false;
     }
@@ -233,6 +243,10 @@ public class Playing extends State implements Statemethods {
 
     public Player getPlayer() {
         return player;
+    }
+
+    public EnemyManager getEnemyManager() {
+        return enemyManager;
     }
 
 }

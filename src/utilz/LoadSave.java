@@ -54,6 +54,7 @@ public class LoadSave {
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
+
         File[] files = file.listFiles();
         File[] fileSorted = new File[files.length];
 
@@ -64,13 +65,6 @@ public class LoadSave {
                 }
             }
         }
-        /*for (File f : files) {
-            System.out.println("file: " + f.getName());
-        }
-
-        for (File f : files) {
-            System.out.println("file: " + f.getName());
-        }*/ // => need to remove
 
         BufferedImage[] imgs = new BufferedImage[fileSorted.length];
 
