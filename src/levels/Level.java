@@ -2,14 +2,11 @@ package levels;
 
 import Main.Game;
 import entities.Fox;
-import entities.Snail;
 
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-import static utilz.HelpMethods.GetLevelData;
 import static utilz.HelpMethods.GetFoxes;
-import static utilz.HelpMethods.GetSnails;
 
 
 
@@ -18,7 +15,6 @@ public class Level {
     private int[][] lvlData;
     //Array for enemies
     private ArrayList<Fox> foxes;
-    private ArrayList<Snail> snails;
     //Size of level => width is flexible & height is fixed
     private int lvlTilesWide;
     private int maxTilesOffset;
@@ -40,7 +36,6 @@ public class Level {
 
     private void creatEnemies() {
         foxes = GetFoxes(img);
-        snails = GetSnails(img);
     }
 
     private void creatLevelData() {
@@ -61,7 +56,5 @@ public class Level {
     public ArrayList<Fox> getFoxes() {
         return foxes;
     }
-    public ArrayList<Snail> getSnails() {
-        return snails;
-    }
+
 }

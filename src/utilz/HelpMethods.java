@@ -9,10 +9,8 @@ import java.util.ArrayList;
 
 import Main.Game;
 import entities.Fox;
-import entities.Snail;
 
 import static utilz.Constants.EnemyConstant.FOX;
-import static utilz.Constants.EnemyConstant.SNAIL;
 
 public class HelpMethods {
     public static boolean CanMoveHere(float x, float y, float width, float height, int [][]lvlData){
@@ -149,18 +147,6 @@ public class HelpMethods {
                 int value = color.getGreen();
                 if (value == FOX)
                     list.add(new Fox(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
-            }
-        return list;
-    }
-
-    public static ArrayList<Snail> GetSnails(BufferedImage img){
-        ArrayList<Snail> list = new ArrayList<>();
-        for(int j = 0; j < img.getHeight(); j++)
-            for (int i = 0; i < img.getWidth(); i++) {
-                Color color = new Color(img.getRGB(i, j));
-                int value = color.getGreen();
-                if (value == SNAIL)
-                    list.add(new Snail(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
             }
         return list;
     }

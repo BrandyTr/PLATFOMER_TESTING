@@ -18,7 +18,7 @@ public abstract class Enemy extends Entity{
     protected boolean inAir;
     protected float fallSpeed;
     protected float gravity = 0.04f * Game.SCALE;
-    protected float walkSpeed = 0.35f * Game.SCALE;
+    protected float walkSpeed = 0.2f * Game.SCALE;
     protected int walkDir = LEFT;
     protected int tileY;
     protected float attackDistance = Game.TILES_SIZE;
@@ -65,7 +65,7 @@ public abstract class Enemy extends Entity{
                 return;
             }
 
-        changeWalkDir();
+        else changeWalkDir();
     }
 
     protected void turnTowardsPlayer(Player player){
@@ -82,12 +82,12 @@ public abstract class Enemy extends Entity{
                 if(IsSightClear(lvlData, hitbox, player.hitbox, tileY))
                     return true;
             }
-         return false;
+        return false;
     }
 
     protected boolean isPlayerInRange(Player player) {
         int absValue = (int)Math.abs(player.hitbox.x - hitbox.x);
-        return absValue <= attackDistance * 5;
+        return absValue <= attackDistance * 3.5;
     }
 
     protected boolean isPlayerCloseForAttack(Player player){
@@ -103,17 +103,12 @@ public abstract class Enemy extends Entity{
 
     public void hurt(int amount){
         currentHealth -= amount;
-        if (currentHealth <= 0) {
-            if (enemyType == FOX)
-                newState(F_DEAD);
-            if (enemyType == SNAIL)
-                newState(S_DEAD);
-        }else {
-            if (enemyType == FOX)
-                newState(F_IDLE);
-            if (enemyType == SNAIL)
-                newState(S_IDLE);
-        }
+        if (currentHealth <= 0)
+            newState(F_DEAD);
+        else
+            newState(F_IDLE);
+
+
     }
 
     protected void checkEnemyHit (Rectangle2D.Float attackbox, Player player){
@@ -129,12 +124,11 @@ public abstract class Enemy extends Entity{
             aniIndex++;
             if(aniIndex >= GetSpriteAmount(enemyType, enemyState)){
                 aniIndex = 0;
-                if (enemyType == FOX)
-                    if(enemyState == F_DEAD)
-                        active = false;
-                if (enemyType == SNAIL)
-                    if(enemyState == S_DEAD)
-                        active = false;
+//                    if(enemyState == ATTACK)
+//                        enemyState = F_IDLE;
+                if(enemyState == F_DEAD)
+                    active = false;
+
             }
         }
     }

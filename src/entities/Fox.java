@@ -49,6 +49,8 @@ public class Fox extends Enemy{
                 case F_RUNNING:
                     if(canSeePlayer(lvlData, player))
                         turnTowardsPlayer(player);
+//                    if(isPlayerCloseForAttack(player))
+//                        newState(ATTACK);
                     move(lvlData);
                     checkEnemyHit(attackBox, player);
                     break;
@@ -65,7 +67,7 @@ public class Fox extends Enemy{
        if(walkDir == RIGHT)
            return 0;
        else
-           return width;
+           return 145;
     }
     public int flipW(){
         if(walkDir == RIGHT)

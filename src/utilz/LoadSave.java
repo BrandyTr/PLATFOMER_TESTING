@@ -1,20 +1,12 @@
 package utilz;
 
-import Main.Game;
-import entities.Fox;
-import entities.Snail;
-
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.ArrayList;
-
-import static utilz.Constants.EnemyConstant.*;
 
 public class LoadSave {
     public static final String PLAYER_ATLAS = "Charac/player_boy.png";
@@ -29,7 +21,6 @@ public class LoadSave {
     public static final String MENU_BACKGROUND_IMG = "Menu/background_menu.png";
     public static final String PLAYING_BG_IMG = "Tiles/background_PLAYING_SCREEN.png";
     public static final String FOX_ENEMY = "Enemy/enemy_fox.png";
-    public static final String SNAIL_ENEMY = "Enemy/enemy_snail.png";
     public static final String STATUS_BAR = "Charac/health_power_bar.png";
     public static final String COMPLETED_IMG = "Menu/completed_sprite.png";
 
