@@ -27,9 +27,16 @@ public class EnemyManager {
     }
 
     public void update(int[][] lvlData, Player player){
-        for(Fox f : foxes)
-            if(f. isActive())
+        boolean isAnyActive = false;
+        for(Fox f : foxes) {
+            if (f.isActive()) {
                 f.update(lvlData, player);
+                isAnyActive = true;
+            }
+        }
+        if (!isAnyActive) {
+            playing.setLevelCompleted(true);
+        }
 
     }
 

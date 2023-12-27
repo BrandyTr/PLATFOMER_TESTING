@@ -45,14 +45,14 @@ public class LoadSave {
     }
 
     public static BufferedImage[] GetAllLevels() {
-        URL url = LoadSave.class.getResource("/Levels");
+        URL url = LoadSave.class.getResource("/lvls");
         File file = null;
 
         try {
             file= new File(url.toURI());
             //url: check location, uri: the actual resource in this case
         } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
         File[] files = file.listFiles();

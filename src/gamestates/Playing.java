@@ -35,7 +35,7 @@ public class Playing extends State implements Statemethods {
     private int maxLvlOffsetX;
     private BufferedImage backgroundImg;
     private boolean gameOver;
-    private boolean lvlCompleted = true;
+    private boolean lvlCompleted;
 
     public Playing(Game game) {
         super(game);
@@ -63,8 +63,10 @@ public class Playing extends State implements Statemethods {
     private void initClasses() {
         levelManager = new LevelManager(game);
         enemyManager = new EnemyManager(this);
+
         player = new Player(200, 200, (int) (64 * Game.SCALE), (int) (40 * Game.SCALE), this);
         player.loadlvlData(levelManager.getCurrentLevel().getLevelData());
+
         pauseOverlay = new PauseOverlay(this);
         gameOverOverlay = new GameOverOverlay(this);
         levelCompletedOverlay = new LevelCompletedOverlay(this);
@@ -128,6 +130,7 @@ public class Playing extends State implements Statemethods {
         //reset player, enemy, lvl etc
         gameOver = false;
         paused = false;
+        lvlCompleted = false;
         player.resetAll();
         enemyManager.resetAllEnemies();
     }
@@ -228,6 +231,11 @@ public class Playing extends State implements Statemethods {
             }
         }
     }
+
+    public void setLevelCompleted(boolean levelCompleted) {
+        this.lvlCompleted = levelCompleted;
+    }
+
 
     public void seMaxLvlOffset(int lvlOffset) {
         this.maxLvlOffsetX = lvlOffset;
