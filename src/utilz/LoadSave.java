@@ -1,8 +1,8 @@
 package utilz;
 
-import Main.Game;
+
 import entities.Fox;
-import entities.Snail;
+import Main.Game;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -17,7 +17,7 @@ public class LoadSave {
     public static final String PLAYER_ATLAS = "Charac/player_boy.png";
     public static final String LEVEL_ATLAS = "Tiles/outside_tiles.png";
     //public static final String LEVEL_ONE_ATLAS = "Tiles/level_one_data.png";
-    public static final String LEVEL_ONE_ATLAS = "Tiles/level_one_data_long.png";
+    public static final String LEVEL_ONE_ATLAS = "Tiles/MAP_DATA_LONG.png";
     public static final String MENU_BUTTONS = "Menu/button_atlas.png";
     public static final String MENU_BACKGROUND = "Menu/menu_background.png";
     public static final String PAUSE_BACKGROUND = "Pause/pause_menu.png";
@@ -63,18 +63,6 @@ public class LoadSave {
         return list;
     }
 
-    public static ArrayList<Snail> GetSnails(){
-        BufferedImage img = GetSpriteAtlas(LEVEL_ONE_ATLAS);
-        ArrayList<Snail> list = new ArrayList<>();
-        for(int j = 0; j < img.getHeight(); j++)
-            for (int i = 0; i < img.getWidth(); i++) {
-                Color color = new Color(img.getRGB(i, j));
-                int value = color.getGreen();
-                if (value == SNAIL)
-                    list.add(new Snail(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
-            }
-        return list;
-    }
 
 
     public static int[][] GetLevelData() {

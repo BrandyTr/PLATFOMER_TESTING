@@ -1,6 +1,5 @@
 package inputs;
 
-import Main.Game;
 import Main.GamePanel;
 import gamestates.Gamestate;
 
