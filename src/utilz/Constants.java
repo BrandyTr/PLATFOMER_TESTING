@@ -5,6 +5,8 @@ import Main.Game;
 import static utilz.Constants.EnemyConstant.*;
 
 public class Constants {
+    public static final int ANI_SPEED = 25;//lower speech faster animation
+
 
     public static class EnemyConstant{
         public static final int FOX = 0;

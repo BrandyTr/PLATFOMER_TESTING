@@ -11,6 +11,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 
+import static utilz.Constants.ANI_SPEED;
 import static utilz.Constants.Directions.*;
 import static utilz.Constants.Directions.DOWN;
 import static utilz.Constants.PlayerConstants.*;
@@ -18,7 +19,6 @@ import static utilz.HelpMethods.*;
 
 public class Player extends Entity {
     private BufferedImage[][] characBoy;
-    private int aniTick, aniIndex, aniSpeech = 25; //lower speech faster animation
     private int playerAction = ATTACK;
     private boolean moving = false, attacking = false;
     private boolean left, up, right, down,jump;
@@ -66,6 +66,12 @@ public class Player extends Entity {
         initAttackBox();
     }
 
+//    public void setSpawn(Point spawn) {
+//        this.x = spawn.x;
+//        this.y = spawn.y;
+//        hitbox.x = x;
+//        hitbox.y = y;
+//    }
     private void initAttackBox() {
         attackBox = new Rectangle2D.Float(x, y,(int)(10 * Game.SCALE), (int)(10* Game.SCALE));
     }
@@ -124,7 +130,7 @@ public class Player extends Entity {
 
     private void updateAnimationTick() {
         aniTick++;
-        if (aniTick >= aniSpeech) {
+        if (aniTick >= ANI_SPEED) {
             aniTick = 0;
             aniIndex++;
             if (aniIndex >= GetSpriteAmount(playerAction)) {

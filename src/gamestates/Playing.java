@@ -50,6 +50,7 @@ public class Playing extends State implements Statemethods {
     public void loadNextLevel() {
         resetAll();
         levelManager.loadNextLevel();
+//        player.setSpawn(levelManager.getCurrentLevel().getPlayerSpawn());
     }
 
     private void loadStartLevel() {
@@ -114,6 +115,7 @@ public class Playing extends State implements Statemethods {
         levelManager.draw(g, xLvlOffset);
         player.render(g, xLvlOffset);
         enemyManager.draw(g, xLvlOffset);
+        //player.setSpawn(levelManager.getCurrentLevel().getPlayerSpawn());
 
         if(paused) {
             g.setColor(new Color(0, 0, 0, 150));

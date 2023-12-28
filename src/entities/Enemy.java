@@ -4,16 +4,14 @@ import Main.Game;
 
 import java.awt.geom.Rectangle2D;
 
+import static utilz.Constants.*;
 import static utilz.Constants.Directions.*;
 import static utilz.Constants.EnemyConstant.*;
-import static utilz.Constants.GetEnemyDmg;
-import static utilz.Constants.GetMaxHealth;
 import static utilz.Constants.PlayerConstants.*;
 import static utilz.HelpMethods.*;
 
 public abstract class Enemy extends Entity{
-    protected int aniIndex, enemyState, enemyType;
-    protected int aniTick, aniSpeed = 25;
+    protected int enemyState, enemyType;
     protected boolean firstUpdate = true;
     protected boolean inAir;
     protected float fallSpeed;
@@ -121,7 +119,7 @@ public abstract class Enemy extends Entity{
 
     protected void updateAnimationTick() {
         aniTick ++;
-        if(aniTick >= aniSpeed){
+        if(aniTick >= ANI_SPEED){
             aniTick = 0;
             aniIndex++;
             if(aniIndex >= GetSpriteAmount(enemyType, enemyState)){

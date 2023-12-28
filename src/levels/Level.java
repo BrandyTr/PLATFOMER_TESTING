@@ -3,11 +3,11 @@ package levels;
 import Main.Game;
 import entities.Fox;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-import static utilz.HelpMethods.GetFoxes;
-import static utilz.HelpMethods.GetLevelData;
+import static utilz.HelpMethods.*;
 
 
 public class Level {
@@ -19,6 +19,7 @@ public class Level {
     private int lvlTilesWide;
     private int maxTilesOffset;
     private int maxLvlOffsetX;
+    //private Point playerSpawn;
 
 
     public Level(BufferedImage img) {
@@ -26,7 +27,12 @@ public class Level {
         creatLevelData();
         creatEnemies();
         calcLvlOffsets();
+//        calcPlayerSpawn();
     }
+
+//    private void calcPlayerSpawn() {
+//        playerSpawn = GetPlayerSpawn(img);
+//    }
 
     private void calcLvlOffsets() {
         lvlTilesWide = img.getWidth();
@@ -57,5 +63,8 @@ public class Level {
     public ArrayList<Fox> getFoxes() {
         return foxes;
     }
+//    public Point getPlayerSpawn() {
+//        return playerSpawn;
+//    }
 
 }
