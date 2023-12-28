@@ -11,6 +11,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 
+import static utilz.Constants.ANI_SPEED;
 import static utilz.Constants.Directions.*;
 import static utilz.Constants.Directions.DOWN;
 import static utilz.Constants.PlayerConstants.*;
@@ -18,18 +19,17 @@ import static utilz.HelpMethods.*;
 
 public class Player extends Entity {
     private BufferedImage[][] characBoy;
-    private int aniTick, aniIndex, aniSpeech = 25; //lower speech faster animation
     private int playerAction = ATTACK;
     private boolean moving = false, attacking = false;
     private boolean left, up, right, down,jump;
-    private float playerSpeech = 1.0f;
+    private float playerSpeech = 1.5f;
     private int[][] lvlData;
     // (0,0) -> (7,8)
     private float xDrawOffset = 7 * Game.SCALE;
     private float yDrawOffSet= 8 * Game.SCALE;
     //Jump, Gravity
     private float airSpeed = 0f;
-    private float gravity = 0.04f * Game.SCALE; //lower gravity => higher jump
+    private float gravity = 0.035f * Game.SCALE; //lower gravity => higher jump
     private float jumpSpeed= -2.25f* Game.SCALE;
     private float fallSpeedAfterCollision= 0.5f * Game.SCALE; //in case player hit roof
     private boolean inAir= false;
@@ -66,6 +66,12 @@ public class Player extends Entity {
         initAttackBox();
     }
 
+//    public void setSpawn(Point spawn) {
+//        this.x = spawn.x;
+//        this.y = spawn.y;
+//        hitbox.x = x;
+//        hitbox.y = y;
+//    }
     private void initAttackBox() {
         attackBox = new Rectangle2D.Float(x, y,(int)(10 * Game.SCALE), (int)(10* Game.SCALE));
     }
@@ -106,7 +112,7 @@ public class Player extends Entity {
 
     public void render(Graphics g, int lvlOffset) {
         g.drawImage(characBoy[playerAction][aniIndex], (int)(hitbox.x - xDrawOffset) -lvlOffset + flipX, (int)(hitbox.y - yDrawOffSet), width * flipW, height, null);
-        //drawHitbox(g,lvlOffset);
+        drawHitbox(g,lvlOffset);
         drawAttackbox(g, lvlOffset);
         drawUI(g);
     }
@@ -124,7 +130,7 @@ public class Player extends Entity {
 
     private void updateAnimationTick() {
         aniTick++;
-        if (aniTick >= aniSpeech) {
+        if (aniTick >= ANI_SPEED) {
             aniTick = 0;
             aniIndex++;
             if (aniIndex >= GetSpriteAmount(playerAction)) {

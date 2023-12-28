@@ -9,22 +9,16 @@ import java.util.ArrayList;
 
 import Main.Game;
 import entities.Fox;
-import entities.Snail;
 
 import static utilz.Constants.EnemyConstant.FOX;
-import static utilz.Constants.EnemyConstant.SNAIL;
 
 public class HelpMethods {
     public static boolean CanMoveHere(float x, float y, float width, float height, int [][]lvlData){
-        if(!IsSolid(x,y,lvlData)) {
-            if (!IsSolid(x + width, y + height, lvlData)) {
-                if (!IsSolid(x + width, y, lvlData)) {
-                    if (!IsSolid(x, y + height, lvlData)) {
+        if(!IsSolid(x,y,lvlData))
+            if (!IsSolid(x + width, y + height, lvlData))
+                if (!IsSolid(x + width, y, lvlData))
+                    if (!IsSolid(x, y + height, lvlData))
                         return true;
-                    }
-                }
-            }
-        }
         return false;
     }
 
@@ -44,7 +38,9 @@ public class HelpMethods {
 
     public static boolean IsTileSolid(int xTile, int yTile, int[][] lvlData){
         int value =lvlData[(int)yTile][(int)xTile];
-        if (value >= 200 || value < 0 || value != 19 && value != 26 && value != 16 && value != 38) {
+        if (value >= 200 || value < 0 || value != 19 && value != 26 && value != 16 && value != 38 && value != 120 && value != 140
+                && value != 121 && value != 101 && value != 81 && value != 80 && value != 141 && value != 143 && value != 123
+                && value != 122 && value != 102 && value != 77 && value != 79) {
             return true;
         }
         return false;
@@ -58,14 +54,10 @@ public class HelpMethods {
             int tileXPos= currentTile * Game.TILES_SIZE;
             int xOffset= (int)(Game.TILES_SIZE- hitbox.width);
             return tileXPos + xOffset + 1  ; //so it not overlapping
-
         } else {
             //Left
             return currentTile * Game.TILES_SIZE;
         }
-
-
-
     }
 
     public static float GetEntityYPosUnderRoofOrAboveFloor(Rectangle2D.Float hitbox, float airSpeed){
@@ -102,8 +94,8 @@ public class HelpMethods {
         for(int i = 0; i < xEnd - xStart; i++) {
             if (IsTileSolid(xStart + i, y, lvlData))
                 return false;
-            if (!IsTileSolid(xStart + i, y + 1, lvlData))
-                return false;
+//            if (!IsTileSolid(xStart + i, y + 1, lvlData))
+//                return false;
         }
         return true;
     }
@@ -153,15 +145,16 @@ public class HelpMethods {
         return list;
     }
 
-    public static ArrayList<Snail> GetSnails(BufferedImage img){
-        ArrayList<Snail> list = new ArrayList<>();
-        for(int j = 0; j < img.getHeight(); j++)
-            for (int i = 0; i < img.getWidth(); i++) {
-                Color color = new Color(img.getRGB(i, j));
-                int value = color.getGreen();
-                if (value == SNAIL)
-                    list.add(new Snail(i * Game.TILES_SIZE, j * Game.TILES_SIZE));
-            }
-        return list;
-    }
+//    public static Point GetPlayerSpawn(BufferedImage img) {
+//        for(int j = 0; j < img.getHeight(); j++) {
+//            for (int i = 0; i < img.getWidth(); i++) {
+//                Color color = new Color(img.getRGB(i, j));
+//                int value = color.getGreen();
+//                if (value == 100) {
+//                    return new Point(i * Game.TILES_SIZE, j * Game.TILES_SIZE);
+//                }
+//            }
+//        }
+//        return new  Point(1 * Game.TILES_SIZE, 1 * Game.TILES_SIZE);
+//    }
 }

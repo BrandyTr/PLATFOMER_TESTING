@@ -2,15 +2,12 @@ package levels;
 
 import Main.Game;
 import entities.Fox;
-import entities.Snail;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-import static utilz.HelpMethods.GetLevelData;
-import static utilz.HelpMethods.GetFoxes;
-import static utilz.HelpMethods.GetSnails;
-
+import static utilz.HelpMethods.*;
 
 
 public class Level {
@@ -18,11 +15,11 @@ public class Level {
     private int[][] lvlData;
     //Array for enemies
     private ArrayList<Fox> foxes;
-    private ArrayList<Snail> snails;
     //Size of level => width is flexible & height is fixed
     private int lvlTilesWide;
     private int maxTilesOffset;
     private int maxLvlOffsetX;
+    //private Point playerSpawn;
 
 
     public Level(BufferedImage img) {
@@ -30,20 +27,25 @@ public class Level {
         creatLevelData();
         creatEnemies();
         calcLvlOffsets();
+//        calcPlayerSpawn();
     }
+
+//    private void calcPlayerSpawn() {
+//        playerSpawn = GetPlayerSpawn(img);
+//    }
 
     private void calcLvlOffsets() {
         lvlTilesWide = img.getWidth();
         maxTilesOffset = lvlTilesWide - Game.TILES_IN_WIDTH;
-        maxLvlOffsetX = Game.TILES_SIZE;
+        maxLvlOffsetX = Game.TILES_SIZE * maxTilesOffset;
     }
 
     private void creatEnemies() {
         foxes = GetFoxes(img);
-        snails = GetSnails(img);
     }
 
     private void creatLevelData() {
+        lvlData = GetLevelData(img);
 
     }
 
@@ -61,7 +63,8 @@ public class Level {
     public ArrayList<Fox> getFoxes() {
         return foxes;
     }
-    public ArrayList<Snail> getSnails() {
-        return snails;
-    }
+//    public Point getPlayerSpawn() {
+//        return playerSpawn;
+//    }
+
 }

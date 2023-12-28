@@ -35,7 +35,7 @@ public class Playing extends State implements Statemethods {
     private int maxLvlOffsetX;
     private BufferedImage backgroundImg;
     private boolean gameOver;
-    private boolean lvlCompleted = true;
+    private boolean lvlCompleted;
 
     public Playing(Game game) {
         super(game);
@@ -47,7 +47,14 @@ public class Playing extends State implements Statemethods {
         loadStartLevel();
     }
 
+    public void loadNextLevel() {
+        resetAll();
+        levelManager.loadNextLevel();
+//        player.setSpawn(levelManager.getCurrentLevel().getPlayerSpawn());
+    }
+
     private void loadStartLevel() {
+        enemyManager.loadEnemies(levelManager.getCurrentLevel());
     }
 
     private void calcLvlOffset() {
@@ -57,8 +64,10 @@ public class Playing extends State implements Statemethods {
     private void initClasses() {
         levelManager = new LevelManager(game);
         enemyManager = new EnemyManager(this);
+
         player = new Player(200, 200, (int) (64 * Game.SCALE), (int) (40 * Game.SCALE), this);
         player.loadlvlData(levelManager.getCurrentLevel().getLevelData());
+
         pauseOverlay = new PauseOverlay(this);
         gameOverOverlay = new GameOverOverlay(this);
         levelCompletedOverlay = new LevelCompletedOverlay(this);
@@ -106,6 +115,7 @@ public class Playing extends State implements Statemethods {
         levelManager.draw(g, xLvlOffset);
         player.render(g, xLvlOffset);
         enemyManager.draw(g, xLvlOffset);
+        //player.setSpawn(levelManager.getCurrentLevel().getPlayerSpawn());
 
         if(paused) {
             g.setColor(new Color(0, 0, 0, 150));
@@ -122,6 +132,7 @@ public class Playing extends State implements Statemethods {
         //reset player, enemy, lvl etc
         gameOver = false;
         paused = false;
+        lvlCompleted = false;
         player.resetAll();
         enemyManager.resetAllEnemies();
     }
@@ -223,6 +234,15 @@ public class Playing extends State implements Statemethods {
         }
     }
 
+    public void setLevelCompleted(boolean levelCompleted) {
+        this.lvlCompleted = levelCompleted;
+    }
+
+
+    public void seMaxLvlOffset(int lvlOffset) {
+        this.maxLvlOffsetX = lvlOffset;
+    }
+
     public void unPauseGame() {
         paused = false;
     }
@@ -233,6 +253,10 @@ public class Playing extends State implements Statemethods {
 
     public Player getPlayer() {
         return player;
+    }
+
+    public EnemyManager getEnemyManager() {
+        return enemyManager;
     }
 
 }

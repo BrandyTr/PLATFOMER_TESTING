@@ -1,6 +1,7 @@
 package levels;
 
 import Main.Game;
+import gamestates.Gamestate;
 import utilz.LoadSave;
 
 import java.awt.*;
@@ -20,6 +21,20 @@ public class LevelManager {
         importOutsideSprites();
         levels = new ArrayList<>();
         buildAllLevels();
+    }
+    public void loadNextLevel() {
+        lvlIndex++;
+        if(lvlIndex >= levels.size()) {
+            //complete all levels => back to menu
+            lvlIndex = 0;
+            System.out.println("No more levels! Game completed!");
+            Gamestate.state = Gamestate.MENU;
+        }
+
+        Level newLevel = levels.get(lvlIndex);
+        game.getPlaying().getEnemyManager().loadEnemies(newLevel);
+        game.getPlaying().getPlayer().loadlvlData(newLevel.getLevelData());
+        game.getPlaying().seMaxLvlOffset(newLevel.getLvlOffset());
     }
 
     private void buildAllLevels() {

@@ -5,6 +5,8 @@ import Main.Game;
 import static utilz.Constants.EnemyConstant.*;
 
 public class Constants {
+    public static final int ANI_SPEED = 25;//lower speech faster animation
+
 
     public static class EnemyConstant{
         public static final int FOX = 0;
@@ -18,18 +20,6 @@ public class Constants {
         public static final int FOX_DRAWOFFSET_X = (int)(5 * Game.SCALE);
         public static final int FOX_DRAWOFFSET_Y = (int)(10 * Game.SCALE);
 
-        public static final int SNAIL = 1;
-        public static final int S_RUNNING = 0;
-        public static final int S_IDLE = 1;
-        public static final int S_UNIDLE = 2;
-        public static final int S_DEAD = 3;
-        public static final int SNAIL_WIDTH_DEFAULT = 48;
-        public static final int SNAIL_HEIGHT_DEFAULT = 32;
-        public static final int SNAIL_WIDTH = (int)(SNAIL_WIDTH_DEFAULT * Game.SCALE);
-        public static final int SNAIL_HEIGHT = (int)(SNAIL_HEIGHT_DEFAULT * Game.SCALE);
-        public static final int SNAIL_DRAWOFFSET_X = (int)(10 * Game.SCALE);
-        public static final int SNAIL_DRAWOFFSET_Y = (int)(10 * Game.SCALE);
-
         public static int GetSpriteAmount(int enemy_type, int enemy_state){
             switch(enemy_type){
                 case FOX:
@@ -42,14 +32,6 @@ public class Constants {
                         default:
                             return 3;
                     }
-                case SNAIL:
-                    switch(enemy_state){
-                        case S_RUNNING:
-                        case S_IDLE:
-                        case S_UNIDLE:
-                        case S_DEAD:
-                            return 8;
-                    }
             }
             return 0;
         }
@@ -59,9 +41,7 @@ public class Constants {
     public static int GetMaxHealth(int enemy_type) {
         switch (enemy_type){
             case FOX:
-                return 50;
-            case SNAIL:
-                return 60;
+                return 15;
             default:
                 return 1;
 
@@ -71,8 +51,6 @@ public class Constants {
     public static int GetEnemyDmg(int enemy_type){
         switch (enemy_type) {
             case FOX:
-                return 10;
-            case SNAIL:
                 return 10;
             default:
                 return 0;
@@ -132,11 +110,14 @@ public class Constants {
                 case RUNNING:
                 case IDLE:
                     return 6; //having 6 animations about running
-                case JUMP:
                 case ATTACK:
                 case DEAD:
-                default:
                     return 4;
+                case JUMP:
+                    return 3;
+                case FALLING:
+                default:
+                    return 1;
             }
         }
     }

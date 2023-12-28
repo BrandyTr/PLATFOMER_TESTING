@@ -4,21 +4,19 @@ import Main.Game;
 
 import java.awt.geom.Rectangle2D;
 
+import static utilz.Constants.*;
 import static utilz.Constants.Directions.*;
 import static utilz.Constants.EnemyConstant.*;
-import static utilz.Constants.GetEnemyDmg;
-import static utilz.Constants.GetMaxHealth;
 import static utilz.Constants.PlayerConstants.*;
 import static utilz.HelpMethods.*;
 
 public abstract class Enemy extends Entity{
-    protected int aniIndex, enemyState, enemyType;
-    protected int aniTick, aniSpeed = 25;
+    protected int enemyState, enemyType;
     protected boolean firstUpdate = true;
     protected boolean inAir;
     protected float fallSpeed;
     protected float gravity = 0.04f * Game.SCALE;
-    protected float walkSpeed = 0.35f * Game.SCALE;
+    protected float walkSpeed = 0.2f * Game.SCALE;
     protected int walkDir = LEFT;
     protected int tileY;
     protected float attackDistance = Game.TILES_SIZE;
@@ -59,13 +57,13 @@ public abstract class Enemy extends Entity{
         else
             xSpeed = walkSpeed;
 
-        if(CanMoveHere(hitbox.x + xSpeed, hitbox.y, hitbox.width, hitbox.height, lvlData))
+        if(CanMoveHere(hitbox.x, hitbox.y, hitbox.width, hitbox.height, lvlData))
             if(IsFloor(hitbox, xSpeed, lvlData)){
                 hitbox.x += xSpeed;
                 return;
             }
 
-        changeWalkDir();
+        else changeWalkDir();
     }
 
     protected void turnTowardsPlayer(Player player){
@@ -82,12 +80,12 @@ public abstract class Enemy extends Entity{
                 if(IsSightClear(lvlData, hitbox, player.hitbox, tileY))
                     return true;
             }
-         return false;
+        return false;
     }
 
     protected boolean isPlayerInRange(Player player) {
         int absValue = (int)Math.abs(player.hitbox.x - hitbox.x);
-        return absValue <= attackDistance * 5;
+        return absValue <= attackDistance * 3.5;
     }
 
     protected boolean isPlayerCloseForAttack(Player player){
@@ -106,14 +104,11 @@ public abstract class Enemy extends Entity{
         if (currentHealth <= 0) {
             if (enemyType == FOX)
                 newState(F_DEAD);
-            if (enemyType == SNAIL)
-                newState(S_DEAD);
-        }else {
+        } else {
             if (enemyType == FOX)
                 newState(F_IDLE);
-            if (enemyType == SNAIL)
-                newState(S_IDLE);
         }
+
     }
 
     protected void checkEnemyHit (Rectangle2D.Float attackbox, Player player){
@@ -124,17 +119,16 @@ public abstract class Enemy extends Entity{
 
     protected void updateAnimationTick() {
         aniTick ++;
-        if(aniTick >= aniSpeed){
+        if(aniTick >= ANI_SPEED){
             aniTick = 0;
             aniIndex++;
             if(aniIndex >= GetSpriteAmount(enemyType, enemyState)){
                 aniIndex = 0;
-                if (enemyType == FOX)
-                    if(enemyState == F_DEAD)
-                        active = false;
-                if (enemyType == SNAIL)
-                    if(enemyState == S_DEAD)
-                        active = false;
+//                    if(enemyState == ATTACK)
+//                        enemyState = F_IDLE;
+                if(enemyState == F_DEAD)
+                    active = false;
+
             }
         }
     }
@@ -153,8 +147,6 @@ public abstract class Enemy extends Entity{
         currentHealth = maxHealth;
         if(enemyType == FOX)
             newState(F_IDLE);
-        if(enemyType == SNAIL)
-            newState(S_IDLE);
         active = true;
         fallSpeed = 0;
     }
