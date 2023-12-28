@@ -10,6 +10,7 @@ import entities.EnemyManager;
 import entities.Player;
 import levels.LevelManager;
 import Main.Game;
+import objects.ObjectManager;
 import ui.GameOverOverlay;
 import ui.LevelCompletedOverlay;
 import ui.PauseOverlay;
@@ -19,6 +20,7 @@ public class Playing extends State implements Statemethods {
     private Player player;
     private LevelManager levelManager;
     private EnemyManager enemyManager;
+    private ObjectManager objectManager;
     private PauseOverlay pauseOverlay;
     private GameOverOverlay gameOverOverlay;
     private LevelCompletedOverlay levelCompletedOverlay;
@@ -55,6 +57,7 @@ public class Playing extends State implements Statemethods {
 
     private void loadStartLevel() {
         enemyManager.loadEnemies(levelManager.getCurrentLevel());
+        objectManager.loadObjects(levelManager.getCurrentLevel());
     }
 
     private void calcLvlOffset() {
@@ -64,6 +67,8 @@ public class Playing extends State implements Statemethods {
     private void initClasses() {
         levelManager = new LevelManager(game);
         enemyManager = new EnemyManager(this);
+        objectManager = new ObjectManager(this);
+
 
         player = new Player(200, 200, (int) (64 * Game.SCALE), (int) (40 * Game.SCALE), this);
         player.loadlvlData(levelManager.getCurrentLevel().getLevelData());
@@ -82,6 +87,7 @@ public class Playing extends State implements Statemethods {
             levelCompletedOverlay.update();
         } else if (!gameOver) {
             levelManager.update();
+            objectManager.update();
             player.update();
             enemyManager.update(levelManager.getCurrentLevel().getLevelData(), player);
             checkCloseToBorder();
@@ -141,9 +147,18 @@ public class Playing extends State implements Statemethods {
         this.gameOver = gameOver;
     }
 
+    public void checkObjectHit(Rectangle2D.Float attackBox) {
+        objectManager.checkObjectHit(attackBox);
+    }
+
+
     public void checkEnemyHit(Rectangle2D.Float attackBox){
         enemyManager.checkEnemyHit(attackBox);
     }
+    public void checkPotionTouched(Rectangle2D.Float hitbox){
+        objectManager.checkObjectTouched(hitbox);
+    }
+
 
     @Override
     public void mouseClicked(MouseEvent e) {
@@ -258,5 +273,10 @@ public class Playing extends State implements Statemethods {
     public EnemyManager getEnemyManager() {
         return enemyManager;
     }
+
+    public ObjectManager getObjectManager(){
+        return objectManager;
+    }
+
 
 }

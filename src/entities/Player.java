@@ -83,10 +83,17 @@ public class Player extends Entity {
         updateHealthBar();
         updateAttackBox();
         updatePos(); //if running true => setAnimations
+
+        if(moving)
+            checkPotionTouched();
         if(attacking)
             checkAttack();
         updateAnimationTick();
         setAnimations();
+    }
+
+    private void checkPotionTouched() {
+        playing.checkPotionTouched(hitbox);
     }
 
     private void checkAttack() {
@@ -94,6 +101,7 @@ public class Player extends Entity {
             return;
         attackChecked = true;
         playing.checkEnemyHit(attackBox);
+        playing.checkObjectHit(attackBox);
     }
 
     private void updateAttackBox() {
@@ -259,6 +267,11 @@ public class Player extends Entity {
         }else if(currentHealth >= maxHealth)
             currentHealth = maxHealth;
     }
+
+    public void changePower(int value){
+        System.out.println("Added power!");
+    }
+
 
     private void loadAnimations() {
         BufferedImage img = LoadSave.GetSpriteAtlas(LoadSave.PLAYER_ATLAS);

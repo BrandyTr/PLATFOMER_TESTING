@@ -2,6 +2,9 @@ package levels;
 
 import Main.Game;
 import entities.Fox;
+import objects.GameContainer;
+import objects.Potion;
+import utilz.HelpMethods;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -16,6 +19,9 @@ public class Level {
     //Array for enemies
     private ArrayList<Fox> foxes;
     //Size of level => width is flexible & height is fixed
+
+    private ArrayList<Potion> potions;
+    private ArrayList<GameContainer> containers;
     private int lvlTilesWide;
     private int maxTilesOffset;
     private int maxLvlOffsetX;
@@ -26,6 +32,8 @@ public class Level {
         this.img = img;
         creatLevelData();
         creatEnemies();
+        createPotions();
+        createContainers();
         calcLvlOffsets();
 //        calcPlayerSpawn();
     }
@@ -33,6 +41,14 @@ public class Level {
 //    private void calcPlayerSpawn() {
 //        playerSpawn = GetPlayerSpawn(img);
 //    }
+
+    private void createContainers() {
+        containers = HelpMethods.GetContainers(img);
+    }
+
+    private void createPotions() {
+        potions = HelpMethods.GetPotions(img);
+    }
 
     private void calcLvlOffsets() {
         lvlTilesWide = img.getWidth();
@@ -66,5 +82,13 @@ public class Level {
 //    public Point getPlayerSpawn() {
 //        return playerSpawn;
 //    }
+
+    public ArrayList<Potion> getPotions(){
+        return potions;
+    }
+
+    public ArrayList<GameContainer> getContainers(){
+        return containers;
+    }
 
 }
