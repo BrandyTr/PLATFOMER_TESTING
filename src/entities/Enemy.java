@@ -59,7 +59,7 @@ public abstract class Enemy extends Entity{
         else
             xSpeed = walkSpeed;
 
-        if(CanMoveHere(hitbox.x + xSpeed, hitbox.y, hitbox.width, hitbox.height, lvlData))
+        if(CanMoveHere(hitbox.x, hitbox.y, hitbox.width, hitbox.height, lvlData))
             if(IsFloor(hitbox, xSpeed, lvlData)){
                 hitbox.x += xSpeed;
                 return;

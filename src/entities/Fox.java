@@ -46,6 +46,7 @@ public class Fox extends Enemy{
             switch(enemyState){
                 case F_IDLE:
                     newState(F_RUNNING);
+                    break;
                 case F_RUNNING:
                     if(canSeePlayer(lvlData, player))
                         turnTowardsPlayer(player);
@@ -67,7 +68,7 @@ public class Fox extends Enemy{
        if(walkDir == RIGHT)
            return 0;
        else
-           return 145;
+           return 146;
     }
     public int flipW(){
         if(walkDir == RIGHT)

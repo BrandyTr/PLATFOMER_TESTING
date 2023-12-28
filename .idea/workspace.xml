@@ -6,20 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="Finish to LevelManager Class (to 39:28, ep 17)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/level_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/level_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/level_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Levels/level_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/lvls/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Levels/level_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/lvls/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Levels/level_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/lvls/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Tiles/outside_tiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Tiles/outside_tiles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Tiles/outside_tiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Tiles/outside_tiles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/EnemyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/EnemyManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Fox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Fox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/HelpMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/HelpMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/EnemyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/EnemyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestates/Playing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/Playing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/levels/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/levels/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Fox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Fox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilz/HelpMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/HelpMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilz/LoadSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/LoadSave.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +49,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Fix&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Downloads/PLATFOMER_TESTING-Enemy&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/bin/IU/Programming/OOP/Project/GitHub/PLATFOMER_TESTING/res/Tiles&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,6 +61,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\Tiles" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\Tiles" />
       <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\lvls" />
@@ -125,28 +125,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finish to LevelManager Class (to 39:28, ep 17)" />
     <option name="LAST_COMMIT_MESSAGE" value="Finish to LevelManager Class (to 39:28, ep 17)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gamestates/Playing.java</url>
-          <line>199</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/gamestates/Playing.java</url>
-          <line>29</line>
-          <properties field="leftBorder" class="gamestates.Playing" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/gamestates/Playing.java</url>
-          <line>28</line>
-          <properties field="xLvlOffset" class="gamestates.Playing" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

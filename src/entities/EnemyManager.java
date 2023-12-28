@@ -47,7 +47,7 @@ public class EnemyManager {
     private void drawFoxes(Graphics g, int xLvlOffset) {
         for (Fox f : foxes)
             if(f. isActive()) {
-            g.drawImage(foxArr[f.getEmenyState()][f.getAniIndex()], (int) (f.getHitbox().x - xLvlOffset -(8 * Game.SCALE)) + f.flipX(), (int) (f.getHitbox().y - (12*Game.SCALE)), FOX_WIDTH + f.flipW(), FOX_HEIGHT, null);
+            g.drawImage(foxArr[f.getEmenyState()][f.getAniIndex()], (int) (f.getHitbox().x - xLvlOffset -(8 * Game.SCALE) + f.flipX()) , (int) (f.getHitbox().y - (10*Game.SCALE)), FOX_WIDTH * f.flipW(), FOX_HEIGHT, null);
             f.drawHitbox(g, xLvlOffset);
             f.drawAttackBox(g, xLvlOffset);
         }

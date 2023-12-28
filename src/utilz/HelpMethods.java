@@ -14,15 +14,11 @@ import static utilz.Constants.EnemyConstant.FOX;
 
 public class HelpMethods {
     public static boolean CanMoveHere(float x, float y, float width, float height, int [][]lvlData){
-        if(!IsSolid(x,y,lvlData)) {
-            if (!IsSolid(x + width, y + height, lvlData)) {
-                if (!IsSolid(x + width, y, lvlData)) {
-                    if (!IsSolid(x, y + height, lvlData)) {
+        if(!IsSolid(x,y,lvlData))
+            if (!IsSolid(x + width, y + height, lvlData))
+                if (!IsSolid(x + width, y, lvlData))
+                    if (!IsSolid(x, y + height, lvlData))
                         return true;
-                    }
-                }
-            }
-        }
         return false;
     }
 
@@ -96,8 +92,8 @@ public class HelpMethods {
         for(int i = 0; i < xEnd - xStart; i++) {
             if (IsTileSolid(xStart + i, y, lvlData))
                 return false;
-            if (!IsTileSolid(xStart + i, y + 1, lvlData))
-                return false;
+//            if (!IsTileSolid(xStart + i, y + 1, lvlData))
+//                return false;
         }
         return true;
     }
