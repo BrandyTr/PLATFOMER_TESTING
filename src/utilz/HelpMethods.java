@@ -38,7 +38,9 @@ public class HelpMethods {
 
     public static boolean IsTileSolid(int xTile, int yTile, int[][] lvlData){
         int value =lvlData[(int)yTile][(int)xTile];
-        if (value >= 200 || value < 0 || value != 19 && value != 26 && value != 16 && value != 38) {
+        if (value >= 200 || value < 0 || value != 19 && value != 26 && value != 16 && value != 38 && value != 120 && value != 140
+                && value != 121 && value != 101 && value != 81 && value != 80 && value != 141 && value != 143 && value != 123
+                && value != 122 && value != 102 && value != 77 && value != 79) {
             return true;
         }
         return false;

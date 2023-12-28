@@ -22,14 +22,14 @@ public class Player extends Entity {
     private int playerAction = ATTACK;
     private boolean moving = false, attacking = false;
     private boolean left, up, right, down,jump;
-    private float playerSpeech = 1.0f;
+    private float playerSpeech = 1.5f;
     private int[][] lvlData;
     // (0,0) -> (7,8)
     private float xDrawOffset = 7 * Game.SCALE;
     private float yDrawOffSet= 8 * Game.SCALE;
     //Jump, Gravity
     private float airSpeed = 0f;
-    private float gravity = 0.04f * Game.SCALE; //lower gravity => higher jump
+    private float gravity = 0.035f * Game.SCALE; //lower gravity => higher jump
     private float jumpSpeed= -2.25f* Game.SCALE;
     private float fallSpeedAfterCollision= 0.5f * Game.SCALE; //in case player hit roof
     private boolean inAir= false;
