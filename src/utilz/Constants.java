@@ -16,11 +16,13 @@ public class Constants {
         public static final int RED_POTION_VALUE = 15;
         public static final int BLUE_POTION_VALUE = 10;
 
+        //Container
         public static final int CONTAINER_WIDTH_DEFAULT = 40;
         public static final int CONTAINER_HEIGHT_DEFAULT = 30;
         public static final int CONTAINER_WIDTH = (int) (Game.SCALE * CONTAINER_WIDTH_DEFAULT);
         public static final int CONTAINER_HEIGHT = (int) (Game.SCALE * CONTAINER_HEIGHT_DEFAULT);
 
+        //Potion
         public static final int POTION_WIDTH_DEFAULT = 12;
         public static final int POTION_HEIGHT_DEFAULT = 16;
         public static final int POTION_WIDTH = (int) (Game.SCALE * POTION_WIDTH_DEFAULT);

@@ -23,6 +23,7 @@ public class LoadSave {
     public static final String FOX_ENEMY = "Enemy/enemy_fox.png";
     public static final String STATUS_BAR = "Charac/health_power_bar.png";
     public static final String COMPLETED_IMG = "Menu/completed_sprite.png";
+    //Object
     public static final String POTION_ATLAS = "Objects/potions_sprites.png";
     public static final String CONTAINER_ATLAS = "Objects/objects_sprites.png";
 

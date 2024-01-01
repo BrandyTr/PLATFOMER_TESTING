@@ -42,15 +42,18 @@ public class GameObject {
         aniTick = 0;
         active = true;
 
-        if(objType == BARREL || objType == BOX)
+        if(objType == BARREL || objType == BOX) {
             doAnimation = false;
-        else
+        }
+        else {
             doAnimation = true;
+        }
     }
 
     protected void initHitbox(int width, int height) {
         hitbox = new Rectangle2D.Float(x, y, (int) (width * Game.SCALE), (int) (height * Game.SCALE));
     }
+
     public void drawHitbox(Graphics g, int xLvlOffset) {
         // For debugging the hitbox
         g.setColor(Color.PINK);
