@@ -43,9 +43,9 @@ public class HelpMethods {
         return IsTileSolid((int)xIndex, (int)yIndex, lvlData);
     }
 
-    public static boolean IsProjectileHittingLevel(Projectile p, int [][]lvlData){
-        return IsSolid(p.getHitbox().x+p.getHitbox().width/2,p.getHitbox().y+p.getHitbox().height/2,lvlData);
-    }
+   // public static boolean IsProjectileHittingLevel(Projectile p, int [][]lvlData){
+     //   return IsSolid(p.getHitbox().x+p.getHitbox().width/2,p.getHitbox().y+p.getHitbox().height/2,lvlData);
+    //}
 
     public static boolean IsTileSolid(int xTile, int yTile, int[][] lvlData){
         int value =lvlData[(int)yTile][(int)xTile];

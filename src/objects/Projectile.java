@@ -9,11 +9,11 @@ public class Projectile {
     private boolean active=true;
 
     public Projectile(int x,int y, int dir) {
-        int xOffset = (int) (-3 * Game.SCALE);
-        int yOffset = (int) (5 * Game.SCALE);
-        if (dir == 1)
-            xOffset = (int) (29 * Game.SCALE);
-        hitbox = new Rectangle2D.Float(x + xOffset, yOffset, CANNON_BALL_WIDTH, CANNON_BALL_HEIGHT);
+        //int xOffset = (int) (-3 * Game.SCALE);
+        //int yOffset = (int) (5 * Game.SCALE);
+        //if (dir == 1)
+          //  xOffset = (int) (29 * Game.SCALE);
+        hitbox = new Rectangle2D.Float(x , y, CANNON_BALL_WIDTH/2, CANNON_BALL_HEIGHT/2);
         this.dir = dir;
     }
 

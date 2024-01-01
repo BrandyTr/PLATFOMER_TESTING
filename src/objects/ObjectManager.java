@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 import static utilz.Constants.ObjectConstants.*;
 import static utilz.HelpMethods.CanCannonSeePlayer;
-import static utilz.HelpMethods.IsProjectileHittingLevel;
+//import static utilz.HelpMethods.IsProjectileHittingLevel;
 import static utilz.Constants.Projectiles.*;
 
 public class ObjectManager {
@@ -121,8 +121,8 @@ public class ObjectManager {
                 if(p.getHitbox().intersects(player.getHitbox())){
                     player.changeHealth(-15);
                     p.setActive(false);
-                }else if (IsProjectileHittingLevel(p,lvlData))
-                    p.setActive(false);
+               }//else if (IsProjectileHittingLevel(p,lvlData))
+                   // p.setActive(false);
             }
     }
 
@@ -148,6 +148,7 @@ public class ObjectManager {
                         if(isPlayerInfrontOfCannon(c,player))
                             if(CanCannonSeePlayer(lvlData,player.getHitbox(),c.getHitbox(), c.getTileY())){
                                 c.setAnimation(true);
+                                //shootCannon(c);
                             }
             c.update();
             if (c.getAniIndex()==4 && c.getAniTick()==0)
@@ -173,7 +174,7 @@ public class ObjectManager {
     private void drawProjectiles(Graphics g, int xLvlOffset) {
         for(Projectile p: projectiles)
             if(p.isActive())
-                g.drawImage(cannonBallImg,(int)(p.getHitbox().x-xLvlOffset),(int)(p.getHitbox().y), CANNON_BALL_WIDTH, CANNON_BALL_HEIGHT, null);
+                g.drawImage(cannonBallImg,(int)(p.getHitbox().x-xLvlOffset),(int)(p.getHitbox().y), CANNON_BALL_WIDTH/2, CANNON_BALL_HEIGHT/2, null);
     }
 
     private void drawCannons(Graphics g, int xLvlOffset) {
@@ -186,7 +187,7 @@ public class ObjectManager {
                 width*=-1;
             }
 
-            g.drawImage(cannonImgs[c.getAniIndex()],x,(int)(c.getHitbox().y),width, CANNON_HEIGHT/2,null);
+            g.drawImage(cannonImgs[c.getAniIndex()],x,(int)(c.getHitbox().y),width/2, CANNON_HEIGHT/2,null);
         }
     }
 

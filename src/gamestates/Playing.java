@@ -122,6 +122,7 @@ public class Playing extends State implements Statemethods {
         player.render(g, xLvlOffset);
         enemyManager.draw(g, xLvlOffset);
         //player.setSpawn(levelManager.getCurrentLevel().getPlayerSpawn());
+        objectManager.draw(g, xLvlOffset);
 
         if(paused) {
             g.setColor(new Color(0, 0, 0, 150));
