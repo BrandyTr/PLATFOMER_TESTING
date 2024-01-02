@@ -77,11 +77,24 @@ public class Player extends Entity {
     }
 
     public void update() {
-        if(currentHealth <= 0) {
-            playing.setGameOver(true);
+
+        updateHealthBar();
+
+        if (currentHealth <= 0) {
+            if(state != DEAD) { // health = 0 change state = dead
+                state = DEAD;
+                aniTick = 0; // reset animation tick
+                aniIndex = 0;
+                playing.setPlayerDying(true);
+            } else if (aniIndex == GetSpriteAmount(DEAD) - 1 && aniTick >= ANI_SPEED - 1) { //Check for the last "dead" sprites (Example: if there is 8 animations, it will count in order from 0 to 7). Check for the last animation tick.
+                playing.setGameOver(true);
+            } else {
+                updateAnimationTick();
+            }
+
             return;
         }
-        updateHealthBar();
+
         updateAttackBox();
         updatePos(); //if running true => setAnimations
 

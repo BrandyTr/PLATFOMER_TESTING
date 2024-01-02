@@ -5,84 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="ep20,21,22">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Charac/health_power_bar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Charac/player_boy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Enemy/enemy_fox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/GamePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/GameWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/MainClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Menu/background_menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Menu/button_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Menu/completed_sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Menu/menu_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Cannon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/GameContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/GameObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/ObjectManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Potion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Projectile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Spike.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/cannon_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/objects_sprites.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/potions_sprites.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/trap_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/traps_atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/pause_menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/sound_button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/urm_buttons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/volume_buttons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Tiles/background_PLAYING_SCREEN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Tiles/level_one_data.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Tiles/level_one_data_long.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Tiles/outside_tiles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Enemy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/EnemyManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Entity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Fox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Gamestate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Playing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Statemethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/KeyboardInputs$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/KeyboardInputs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/MouseInputs$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/MouseInputs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/Level.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/LevelManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/lvls/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/lvls/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/lvls/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/GameOverOverlay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/LevelCompletedOverlay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/MenuButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/SoundButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/UrmButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$Directions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$EnemyConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$ObjectConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$PlayerConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$Projectiles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$Buttons.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$PauseButtons.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$URMButtons.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$VolumeButtons.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/HelpMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/LoadSave.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/GameContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/GameContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/ObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/ObjectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/pause_menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/pause_menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Playing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Playing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/GameOverOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/GameOverOverlay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/LevelCompletedOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/LevelCompletedOverlay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/UrmButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/UrmButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$Directions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$Directions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$PlayerConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$PlayerConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$PauseButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$PauseButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$URMButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$URMButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$VolumeButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$VolumeButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/LoadSave.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/LoadSave.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Pause/pause_menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Pause/pause_menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestates/Playing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/Playing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/GameOverOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/GameOverOverlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/PauseOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PauseOverlay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilz/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilz/LoadSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/LoadSave.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,9 +61,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Traps,Cannons,Projectiles",
+    "git-widget-placeholder": "ep-23-24-official",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/bin/IU/Programming/OOP/Project/GitHub/PLATFOMER_TESTING/res/lvls",
+    "last_opened_file_path": "C:/Users/admin/Desktop/PLATFOMER_TESTING/res/Death",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -131,6 +76,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Death" />
+      <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Pause" />
       <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\lvls" />
       <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\Objects" />
       <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\Tiles" />
@@ -246,5 +193,16 @@
     <MESSAGE value="fix map for player (need to fix enemy on the ground =&gt; change direction)" />
     <MESSAGE value="ep20,21,22" />
     <option name="LAST_COMMIT_MESSAGE" value="ep20,21,22" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/Playing.java</url>
+          <line>195</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

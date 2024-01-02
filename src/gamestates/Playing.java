@@ -24,6 +24,7 @@ public class Playing extends State implements Statemethods {
     private PauseOverlay pauseOverlay;
     private GameOverOverlay gameOverOverlay;
     private LevelCompletedOverlay levelCompletedOverlay;
+    private boolean playerDying;
     private boolean paused = false;
 
 
@@ -85,7 +86,11 @@ public class Playing extends State implements Statemethods {
             pauseOverlay.update();
         } else if (lvlCompleted) {
             levelCompletedOverlay.update();
-        } else if (!gameOver) {
+        } else if(gameOver) {
+            gameOverOverlay.update();
+        } else if (playerDying) {
+            player.update();
+        } else {
             levelManager.update();
             objectManager.update(levelManager.getCurrentLevel().getLevelData(),player);
             player.update();
@@ -188,7 +193,7 @@ public class Playing extends State implements Statemethods {
             case KeyEvent.VK_SPACE:
                 player.setAttacking(true);
                 break;
-            case KeyEvent.VK_CAPS_LOCK:
+                case KeyEvent.VK_ESCAPE:
                 paused = !paused;
                 break;
 
@@ -229,7 +234,8 @@ public class Playing extends State implements Statemethods {
             } else if (lvlCompleted) {
                 levelCompletedOverlay.mousePressed(e);
             }
-        }
+        } else
+            gameOverOverlay.mousePressed(e);
     }
 
     @Override
@@ -240,7 +246,8 @@ public class Playing extends State implements Statemethods {
             } else if (lvlCompleted) {
                 levelCompletedOverlay.mouseReleased(e);
             }
-        }
+        } else
+            gameOverOverlay.mouseReleased(e);
     }
 
     @Override
@@ -251,7 +258,8 @@ public class Playing extends State implements Statemethods {
             } else if (lvlCompleted) {
                 levelCompletedOverlay.mouseMoved(e);
             }
-        }
+        } else
+            gameOverOverlay.mouseMoved(e);
     }
 
     public void setLevelCompleted(boolean levelCompleted) {
@@ -287,5 +295,7 @@ public class Playing extends State implements Statemethods {
         return levelManager;
     }
 
-
+    public void setPlayerDying(boolean playerDying) {
+        this.playerDying = playerDying;
+    }
 }

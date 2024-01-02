@@ -32,33 +32,29 @@ public class PauseOverlay {
 
     private void createVolumeButton() {
         int vX = (int) (300*2f + 90);
-        int vY = (int) (300*2f - 80);
+        int vY = (int) (300*2f - 40);
         volumeButton = new VolumeButton(vX, vY, SLIDER_WIDTH, VOLUME_HEIGHT);
     }
 
     private void createUrmButtons() {
-//        int menuX = (int) (155 * Game.SCALE);
-//        int replayX = (int) (160 * Game.SCALE);
-//        int unpausedX = (int) (200 * Game.SCALE);
-//        int bY = (int) (150 * Game.SCALE);
-        int menuX = (int) (355 * 2f);
-        int replayX = (int) (405 * 2f);
-        int unpausedX = (int) (455 * 2f);
-        int bY = (int) (300 * 2f);
+
+        int menuX = (int) (355 * 2f - 36);
+        int replayX = (int) (405 * 2f - 21);
+        int unpausedX = (int) (455 * 2f - 6);
+        int bY = (int) (315 * 2f + 10);
 
         menuB = new UrmButton(menuX, bY, URM_SIZE, URM_SIZE,2);
         replayB = new UrmButton(replayX, bY, URM_SIZE, URM_SIZE,1);
         unpauseB = new UrmButton(unpausedX, bY, URM_SIZE, URM_SIZE,0);
-
 
     }
 
     private void createSoundButtons() {
 
         // Create sound buttons (postion)
-        int soundX = (int) (450 * 2f);
-        int musicY = (int) (165 * 1.8f);
-        int sfxY = (int) (205 * 1.8f);
+        int soundX = (int) (420 * 2f);
+        int musicY = (int) (165 * 2f);
+        int sfxY = (int) (205 * 2f);
         musicButton = new SoundButton(soundX, musicY, SOUND_SIZE, SOUND_SIZE);
         sfxButton = new SoundButton(soundX, sfxY, SOUND_SIZE, SOUND_SIZE);
 
@@ -66,10 +62,9 @@ public class PauseOverlay {
 
     private void loadBackground() { //size of pause background
         backgroundImg = LoadSave.GetSpriteAtlas(LoadSave.PAUSE_BACKGROUND);
-//        bgW = (int)(backgroundImg.getWidth() * Game.SCALE);
-//        bgH = (int)(backgroundImg.getHeight() * Game.SCALE);
-        bgW = (int)(backgroundImg.getWidth() * 1.6f);
-        bgH = (int)(backgroundImg.getHeight() * 1.6f);
+
+        bgW = (int)(backgroundImg.getWidth() * 8f);
+        bgH = (int)(backgroundImg.getHeight() * 8f);
         bgX = Game.GAME_WIDTH / 2 - bgW / 2; //center - width/2
         bgY = (int) (25 * Game.SCALE); //test, if we want it up(decrease num), down(increase num)
     }
