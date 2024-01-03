@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="ep20,21,22">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/attack1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/attack2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/attack3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/die.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/gameover.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/jump.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/level1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/level2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/lvlcompleted.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/audio/menu.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/AudioPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/KeyboardInputs$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/KeyboardInputs$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/KeyboardInputs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/KeyboardInputs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/MouseInputs$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/MouseInputs$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/MouseInputs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/inputs/MouseInputs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/LoadSave.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/LoadSave.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inputs/KeyboardInputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputs/KeyboardInputs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inputs/MouseInputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputs/MouseInputs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/PauseOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PauseOverlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilz/LoadSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/LoadSave.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +54,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ep-23-24-official",
+    "git-widget-placeholder": "adding__sound",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/admin/Desktop/PLATFOMER_TESTING/res/Option",
+    "last_opened_file_path": "C:/Users/Admin/Downloads/Grybotector-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,6 +76,7 @@
       <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\Objects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\audio" />
       <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\lvls" />
       <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\Tiles" />
       <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\Levels" />
@@ -133,6 +135,8 @@
       <workItem from="1703763908407" duration="2859000" />
       <workItem from="1703767669262" duration="13000" />
       <workItem from="1703767692887" duration="2156000" />
+      <workItem from="1704279970236" duration="535000" />
+      <workItem from="1704280548363" duration="5390000" />
     </task>
     <task id="LOCAL-00001" summary="fix map for player (need to fix enemy on the ground =&gt; change direction)">
       <option name="closed" value="true" />
@@ -191,52 +195,32 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>150</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>151</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>154</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>153</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>44</line>
+          <line>52</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>47</line>
+          <line>55</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>65</line>
+          <line>75</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>66</line>
+          <line>76</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>82</line>
+          <line>90</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>81</line>
+          <line>89</line>
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -246,7 +230,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/inputs/KeyboardInputs.java</url>
-          <line>30</line>
+          <line>32</line>
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -256,12 +240,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/inputs/MouseInputs.java</url>
-          <line>43</line>
+          <line>46</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/inputs/MouseInputs.java</url>
-          <line>44</line>
+          <line>47</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -271,47 +255,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/inputs/MouseInputs.java</url>
-          <line>61</line>
+          <line>67</line>
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/inputs/MouseInputs.java</url>
-          <line>60</line>
+          <line>66</line>
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/inputs/MouseInputs.java</url>
-          <line>62</line>
+          <line>68</line>
           <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>149</line>
-          <properties class="Main.Game" method="getAudioOptions">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>152</line>
-          <properties class="Main.Game" method="getGameOptions">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>21</line>
-          <properties field="gameOptions" class="Main.Game" />
+          <line>28</line>
+          <properties field="SCALE" class="Main.Game" />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
-          <line>22</line>
-          <properties field="audioOptions" class="Main.Game" />
+          <line>29</line>
+          <properties field="TILES_IN_WIDTH" class="Main.Game" />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>
