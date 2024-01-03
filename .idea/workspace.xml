@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="ep20,21,22">
-      <change afterPath="$PROJECT_DIR$/res/audio/attack1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/audio/attack2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/audio/attack3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/audio/die.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/audio/gameover.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/audio/jump.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/audio/level1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/audio/level2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/audio/lvlcompleted.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/audio/menu.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/AudioPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="adding sound 1 (finish to 36:40)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestates/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestates/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/levels/LevelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/levels/LevelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/AudioOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AudioOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/MenuButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MenuButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/VolumeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/VolumeButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,25 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MainClass.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "adding__sound",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Downloads/Grybotector-main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MainClass.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;adding__sound&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Downloads/Grybotector-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Option" />
@@ -136,7 +127,8 @@
       <workItem from="1703767669262" duration="13000" />
       <workItem from="1703767692887" duration="2156000" />
       <workItem from="1704279970236" duration="535000" />
-      <workItem from="1704280548363" duration="5390000" />
+      <workItem from="1704280548363" duration="5940000" />
+      <workItem from="1704286844346" duration="1228000" />
     </task>
     <task id="LOCAL-00001" summary="fix map for player (need to fix enemy on the ground =&gt; change direction)">
       <option name="closed" value="true" />
@@ -167,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703955807965</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding sound 1 (finish to 36:40)">
+      <option name="closed" value="true" />
+      <created>1704286732698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704286732698</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +188,8 @@
     <MESSAGE value="Finish to LevelManager Class (to 39:28, ep 17)" />
     <MESSAGE value="fix map for player (need to fix enemy on the ground =&gt; change direction)" />
     <MESSAGE value="ep20,21,22" />
-    <option name="LAST_COMMIT_MESSAGE" value="ep20,21,22" />
+    <MESSAGE value="adding sound 1 (finish to 36:40)" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding sound 1 (finish to 36:40)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
