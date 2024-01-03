@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="adding sound 1 (finish to 36:40)">
+    <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="adding sound 2 (finish to 48:50)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestates/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestates/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/levels/LevelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/levels/LevelManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/AudioOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AudioOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/MenuButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MenuButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/VolumeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/VolumeButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/LevelManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/LevelManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/AudioOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/AudioOptions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/MenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/MenuButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestates/Playing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/Playing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/GameOverOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/GameOverOverlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/PauseOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PauseOverlay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +33,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BrandyTr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="705b29ca-6174-455e-8113-4a0d8457831b" />
+        <option name="url" value="https://github.com/BrandyTr/PLATFOMER_TESTING.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -128,7 +148,8 @@
       <workItem from="1703767692887" duration="2156000" />
       <workItem from="1704279970236" duration="535000" />
       <workItem from="1704280548363" duration="5940000" />
-      <workItem from="1704286844346" duration="1228000" />
+      <workItem from="1704286844346" duration="1591000" />
+      <workItem from="1704288461318" duration="923000" />
     </task>
     <task id="LOCAL-00001" summary="fix map for player (need to fix enemy on the ground =&gt; change direction)">
       <option name="closed" value="true" />
@@ -167,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704286732698</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding sound 2 (finish to 48:50)">
+      <option name="closed" value="true" />
+      <created>1704288432377</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704288432377</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +218,8 @@
     <MESSAGE value="fix map for player (need to fix enemy on the ground =&gt; change direction)" />
     <MESSAGE value="ep20,21,22" />
     <MESSAGE value="adding sound 1 (finish to 36:40)" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding sound 1 (finish to 36:40)" />
+    <MESSAGE value="adding sound 2 (finish to 48:50)" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding sound 2 (finish to 48:50)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
