@@ -145,6 +145,7 @@ public class Playing extends State implements Statemethods {
         gameOver = false;
         paused = false;
         lvlCompleted = false;
+        playerDying = false;
         player.resetAll();
         enemyManager.resetAllEnemies();
     }
