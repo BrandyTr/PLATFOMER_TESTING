@@ -172,6 +172,8 @@ public class Playing extends State implements Statemethods {
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        if(!gameOver){
+        }
 
     }
 
@@ -181,21 +183,24 @@ public class Playing extends State implements Statemethods {
             gameOverOverlay.keyPressed(e);
         else
             switch (e.getKeyCode()) {
-            case KeyEvent.VK_LEFT:
-                player.setLeft(true);
-                break;
-            case KeyEvent.VK_RIGHT:
-                player.setRight(true);
-                break;
-            case KeyEvent.VK_UP:
-                player.setJump(true);
-                break;
-            case KeyEvent.VK_SPACE:
-                player.setAttacking(true);
-                break;
+                case KeyEvent.VK_W:
+                    player.powerAttack();
+                    break;
+                case KeyEvent.VK_LEFT:
+                    player.setLeft(true);
+                    break;
+                case KeyEvent.VK_RIGHT:
+                    player.setRight(true);
+                    break;
+                case KeyEvent.VK_UP:
+                    player.setJump(true);
+                    break;
+                case KeyEvent.VK_SPACE:
+                    player.setAttacking(true);
+                    break;
                 case KeyEvent.VK_ESCAPE:
-                paused = !paused;
-                break;
+                    paused = !paused;
+                    break;
 
         }
     }
@@ -204,18 +209,18 @@ public class Playing extends State implements Statemethods {
     public void keyReleased(KeyEvent e) {
         if(!gameOver)
             switch (e.getKeyCode()) {
-            case KeyEvent.VK_LEFT:
-                player.setLeft(false);
-                break;
-            case KeyEvent.VK_RIGHT:
-                player.setRight(false);
-                break;
-            case KeyEvent.VK_UP:
-                player.setJump(false);
-                break;
-            case KeyEvent.VK_SPACE:
-                player.setAttacking(true);
-                break;
+                case KeyEvent.VK_LEFT:
+                    player.setLeft(false);
+                    break;
+                case KeyEvent.VK_RIGHT:
+                    player.setRight(false);
+                    break;
+                case KeyEvent.VK_UP:
+                    player.setJump(false);
+                    break;
+                case KeyEvent.VK_SPACE:
+                    player.setAttacking(true);
+                    break;
         }
 
     }
