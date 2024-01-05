@@ -82,6 +82,7 @@ public class PauseOverlay {
 
     public void mouseReleased(MouseEvent e) {
         if (menuB.isMousePressed()) {
+            playing.resetAll();
             playing.setGamestate(Gamestate.MENU);
             playing.unPauseGame();
         } else if (isIn(e, replayB)) {
