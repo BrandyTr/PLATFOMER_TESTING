@@ -24,8 +24,8 @@ public class Player extends Entity {
     private boolean left, right, jump;
     private int[][] lvlData;
     // (0,0) -> (7,8)
-    private float xDrawOffset = 7 * Game.SCALE;
-    private float yDrawOffSet= 8 * Game.SCALE;
+    private float xDrawOffset = 8 * Game.SCALE;
+    private float yDrawOffSet= 10 * Game.SCALE;
     //Jump, Gravity
     private float gravity = 0.04f * Game.SCALE; //lower gravity => higher jump
     private float jumpSpeed= -2.25f* Game.SCALE;
@@ -63,7 +63,7 @@ public class Player extends Entity {
         this.walkSpeed = 0.5f * Game.SCALE;
 
         loadAnimations();
-        initHitbox(15, 18 );
+        initHitbox(13, 16 );
         initAttackBox();
     }
 
