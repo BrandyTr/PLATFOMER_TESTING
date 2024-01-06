@@ -34,9 +34,9 @@ public class ObjectManager {
         loadImgs();
     }
 
-    public void checkSpikesTouched(Player p){
-        for(Spike s: spikes)
-            if(s.getHitbox().intersects(p.getHitbox()))
+    public void checkSpikesTouched(Player p) {
+        for (Spike s : spikes)
+            if (s.getHitbox().intersects(p.getHitbox()))
                 p.kill();
     }
 

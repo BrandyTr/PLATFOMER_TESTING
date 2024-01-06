@@ -115,8 +115,8 @@ public class HelpMethods {
         for(int i = 0; i < xEnd - xStart; i++) {
             if (IsTileSolid(xStart + i, y, lvlData))
                 return false;
-//            if (!IsTileSolid(xStart + i, y + 1, lvlData))
-//                return false;
+            if (!IsTileSolid(xStart + i, y + 1, lvlData))
+                return false;
         }
         return true;
     }

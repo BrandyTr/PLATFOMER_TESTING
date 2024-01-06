@@ -148,6 +148,7 @@ public class Playing extends State implements Statemethods {
         playerDying = false;
         player.resetAll();
         enemyManager.resetAllEnemies();
+        objectManager.resetAllObjects();
     }
 
     public void setGameOver(boolean gameOver){

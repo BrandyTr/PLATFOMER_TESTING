@@ -42,6 +42,7 @@ public class Constants {
         public static final int SPIKE_WIDTH =(int)(Game.SCALE * SPIKE_WIDTH_DEFAULT);
         public static final int SPIKE_HEIGHT =(int)(Game.SCALE * SPIKE_HEIGHT_DEFAULT);
 
+
         public static final int CANNON_WIDTH_DEFAULT =40;
         public static final int CANNON_HEIGHT_DEFAULT =26;
         public static final int CANNON_WIDTH =(int)(Game.SCALE * CANNON_WIDTH_DEFAULT);
@@ -69,7 +70,7 @@ public class Constants {
         public static final int FOX_HEIGHT_DEFAULT = 32;
         public static final int FOX_WIDTH = (int)(FOX_WIDTH_DEFAULT * Game.SCALE);
         public static final int FOX_HEIGHT = (int)(FOX_HEIGHT_DEFAULT * Game.SCALE);
-        public static final int FOX_DRAWOFFSET_X = (int)(5 * Game.SCALE);
+        public static final int FOX_DRAWOFFSET_X = (int)(8 * Game.SCALE);
         public static final int FOX_DRAWOFFSET_Y = (int)(10 * Game.SCALE);
 
 
