@@ -22,16 +22,16 @@ public class AudioOptions {
         createVolumeButton();
     }
 
-    private void createVolumeButton() {
-        int vX = (int) (300*2f + 90);
-        int vY = (int) (300*2f - 40);
+    private void createVolumeButton() { //Slider position
+        int vX = (int) (240 * 2f - 5);
+        int vY = (int) (225 * 2f + 5);
         volumeButton = new VolumeButton(vX, vY, SLIDER_WIDTH, VOLUME_HEIGHT);
     }
 
-    private void createSoundButtons() {
-        int soundX = (int) (420 * 2f);
-        int musicY = (int) (165 * 2f);
-        int sfxY = (int) (205 * 2f);
+    private void createSoundButtons() { //Sound buttons position
+        int soundX = (int) (340 * 2f);
+        int musicY = (int) (130 * 2f);
+        int sfxY = (int) (162 * 2f);
         musicButton = new SoundButton(soundX, musicY, SOUND_SIZE, SOUND_SIZE);
         sfxButton = new SoundButton(soundX, sfxY, SOUND_SIZE, SOUND_SIZE);
     }

@@ -24,10 +24,10 @@ public class LevelCompletedOverlay {
 
     private void initButtons() { //fix position of URM BUTTONS
         //position X
-        int menuX = (int) (340 * 2);
-        int nextX = (int) (447 * 2);
+        int menuX = (int) (250 * 2);
+        int nextX = (int) (338 * 2);
         //position Y
-        int y = (int) (200 * 2);
+        int y = (int) (210 * 2);
 
         next = new UrmButton(nextX, y, URM_SIZE, URM_SIZE, 0);
         menu = new UrmButton(menuX, y, URM_SIZE, URM_SIZE, 2);

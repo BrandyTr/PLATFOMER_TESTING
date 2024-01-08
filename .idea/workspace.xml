@@ -6,10 +6,52 @@
   <component name="ChangeListManager">
     <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="fix hitbox Player">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Death/death_screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Death/death_screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Main/GamePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Cannon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Cannon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/GameContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/GameContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/GameObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/ObjectManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/ObjectManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Potion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Potion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Projectile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Projectile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Spike.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/Spike.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Option/options_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Option/options_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/pause_menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/pause_menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/EnemyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/EnemyManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Fox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Fox.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/GameOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/GameOptions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Playing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Playing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/LevelManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/levels/LevelManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/AudioOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/AudioOptions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/GameOverOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/GameOverOverlay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/LevelCompletedOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/LevelCompletedOverlay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/UrmButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/UrmButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$EnemyConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$EnemyConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$ObjectConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$ObjectConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$Projectiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$Projectiles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$PauseButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$PauseButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$URMButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$URMButtons.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/HelpMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/HelpMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilz/HelpMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/HelpMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Death/death_screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Option/options_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Pause/pause_menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestates/GameOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/GameOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gamestates/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/AudioOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AudioOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/GameOverOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/GameOverOverlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/PauseOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PauseOverlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/VolumeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/VolumeButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilz/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,29 +93,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MainClass.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;adjust&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Downloads/Grybotector-main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MainClass.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "big-fix-UI",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/admin/Desktop/PLATFOMER_TESTING/res/Death",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Option" />
       <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Death" />
+      <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Option" />
       <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Pause" />
       <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\lvls" />
       <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\Objects" />
@@ -297,11 +339,197 @@
           <line>74</line>
           <option name="timeStamp" value="109" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/PauseOverlay.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/PauseOverlay.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/PauseOverlay.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/GameOverOverlay.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/GameOverOverlay.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/GameOverOverlay.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/PauseOverlay.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/PauseOverlay.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/PauseOverlay.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/PauseOverlay.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/AudioOptions.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/AudioOptions.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/AudioOptions.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/AudioOptions.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/AudioOptions.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/GameOptions.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/GameOptions.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/GameOptions.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gamestates/GameOptions.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/GameOverOverlay.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ui/GameOverOverlay.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
           <line>35</line>
           <properties field="TILES_IN_WIDTH" class="Main.Game" />
           <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/Main/Game.java</url>
+          <line>28</line>
+          <properties field="SCALE" class="Main.Game" />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/utilz/Constants.java</url>
+          <line>130</line>
+          <properties field="URM_SIZE" class="utilz.Constants.UI.URMButtons" />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/utilz/Constants.java</url>
+          <line>125</line>
+          <properties field="SOUND_SIZE" class="utilz.Constants.UI.PauseButtons" />
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ui/AudioOptions.java</url>
+          <line>24</line>
+          <properties class="ui.AudioOptions" method="createVolumeButton">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ui/AudioOptions.java</url>
+          <line>30</line>
+          <properties class="ui.AudioOptions" method="createSoundButtons">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="133" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

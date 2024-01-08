@@ -24,17 +24,17 @@ public class GameOverOverlay {
 
     private void createButtons() {
 
-        int menuX = (int) (340 * 2 - 82); //Position menu button
-        int playX = (int) (447 * 2 - 15); //Position play button
-        int y = (int) (200 * 2 + 160);
+        int menuX = (int) (240 * 2f); //Position menu button
+        int playX = (int) (345 * 2f); //Position play button
+        int y = (int) (167 * 2f);
         play = new UrmButton(playX, y, URM_SIZE, URM_SIZE, 0);
         menu = new UrmButton(menuX, y, URM_SIZE, URM_SIZE, 2);
     }
 
     private void createImg() { //Size of death screen
         img = LoadSave.GetSpriteAtlas(LoadSave.DEATH_SCREEN);
-        imgW = (int) (img.getWidth() * Game.SCALE);
-        imgH = (int) (img.getHeight() * Game.SCALE);
+        imgW = (int) (img.getWidth() * 2f);
+        imgH = (int) (img.getHeight() * 2f);
         //Postion x, y
         imgX = Game.GAME_WIDTH / 2 - imgW / 2;
         imgY = (int) (40 * 3.5f - 30);
