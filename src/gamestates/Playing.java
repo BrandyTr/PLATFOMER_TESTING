@@ -51,8 +51,9 @@ public class Playing extends State implements Statemethods {
     }
 
     public void loadNextLevel() {
-        resetAll();
+
         levelManager.loadNextLevel();
+        resetAll();
 //        player.setSpawn(levelManager.getCurrentLevel().getPlayerSpawn());
     }
 
@@ -198,6 +199,9 @@ public class Playing extends State implements Statemethods {
                 case KeyEvent.VK_ESCAPE:
                 paused = !paused;
                 break;
+                case KeyEvent.VK_W:
+                    player.powerAttack();
+                    break;
 
         }
     }
