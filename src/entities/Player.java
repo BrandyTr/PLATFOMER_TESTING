@@ -286,7 +286,7 @@ public class Player extends Entity {
         if (left && !right) {
             xSpeed -= walkSpeed;
             //say moving is true if it can move somewhere
-            flipX = 116;
+            flipX = 89;
             flipW = -1;
         }
         if (right && !left) {

@@ -188,6 +188,7 @@ public class ObjectManager {
             }
 
             g.drawImage(cannonImgs[c.getAniIndex()],x,(int)(c.getHitbox().y),width/2, CANNON_HEIGHT/2,null);
+            c.drawHitbox(g, xLvlOffset);
         }
     }
 
@@ -205,7 +206,7 @@ public class ObjectManager {
                 if(gc.getObjType() == BARREL)
                     type = 1;
                 g.drawImage(containerImgs[type][gc.getAniIndex()], (int)(gc.getHitbox().x - gc.getxDrawOffset()- xLvlOffset +2*Game.SCALE), (int)(gc.getHitbox().y - gc.getyDrawOffset() - (7 + 2*type)*Game.SCALE), CONTAINER_WIDTH, CONTAINER_HEIGHT, null);
-//                gc.drawHitbox(g, xLvlOffset);
+                gc.drawHitbox(g, xLvlOffset);
             }
     }
 
@@ -215,8 +216,8 @@ public class ObjectManager {
                 int type = 0;
                 if(p.getObjType() == RED_POTION)
                     type = 1;
-                g.drawImage(potionImgs[type][p.getAniIndex()], (int)(p.getHitbox().x - p.getxDrawOffset()- xLvlOffset + Game.SCALE), (int)(p.getHitbox().y - p.getyDrawOffset()- 10 * Game.SCALE), POTION_WIDTH, POTION_HEIGHT, null);
-//                p.drawHitbox(g, xLvlOffset);
+                g.drawImage(potionImgs[type][p.getAniIndex()], (int)(p.getHitbox().x - p.getxDrawOffset()- xLvlOffset + Game.SCALE), (int)(p.getHitbox().y - p.getyDrawOffset()- 0.5*Game.SCALE), POTION_WIDTH, POTION_HEIGHT, null);
+                p.drawHitbox(g, xLvlOffset);
             }
     }
 

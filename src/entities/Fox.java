@@ -64,7 +64,7 @@ public class Fox extends Enemy{
        if(walkDir == RIGHT)
            return 0;
        else
-           return 146;
+           return 101;
     }
     public int flipW(){
         if(walkDir == RIGHT)
