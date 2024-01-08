@@ -17,7 +17,7 @@ public class VolumeButton extends PauseButton {
     public VolumeButton(int x, int y, int width, int height) {
         super(x + width/2, y, VOLUME_WIDTH, height);
         bounds.x -= VOLUME_WIDTH/2;
-        buttonX = x + width/2 - 15; //position of volume button on slide
+        buttonX = x + width/2 ; //position of volume button on slide
         this.x = x;
         this.width = width;
 
