@@ -205,7 +205,7 @@ public class ObjectManager {
                 int type = 0;
                 if(gc.getObjType() == BARREL)
                     type = 1;
-                g.drawImage(containerImgs[type][gc.getAniIndex()], (int)(gc.getHitbox().x - gc.getxDrawOffset()- xLvlOffset +2*Game.SCALE), (int)(gc.getHitbox().y - gc.getyDrawOffset() - (7 + 2*type)*Game.SCALE), CONTAINER_WIDTH, CONTAINER_HEIGHT, null);
+                g.drawImage(containerImgs[type][gc.getAniIndex()], (int)(gc.getHitbox().x - gc.getxDrawOffset()- xLvlOffset +2*Game.SCALE), (int)(gc.getHitbox().y - gc.getyDrawOffset() - 2*type*Game.SCALE), CONTAINER_WIDTH, CONTAINER_HEIGHT, null);
                 gc.drawHitbox(g, xLvlOffset);
             }
     }

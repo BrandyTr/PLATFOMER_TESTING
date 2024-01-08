@@ -6,30 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="fix hitbox Player">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Death/death_screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Death/death_screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Option/options_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Option/options_background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/pause_menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Pause/pause_menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/GameOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/GameOptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/AudioOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/AudioOptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/GameOverOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/GameOverOverlay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/LevelCompletedOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/LevelCompletedOverlay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/UrmButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/UrmButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$PauseButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$PauseButtons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$URMButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$UI$URMButtons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Death/death_screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Option/options_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Pause/pause_menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestates/GameOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/GameOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestates/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/AudioOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AudioOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/GameOverOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/GameOverOverlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LevelCompletedOverlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/PauseOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PauseOverlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/VolumeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/VolumeButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilz/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/lvls/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/lvls/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/lvls/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/lvls/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/GameContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/GameContainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +58,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "final-fix",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/admin/Desktop/PLATFOMER_TESTING/res/Option",
+    "last_opened_file_path": "D:/bin/IU/Programming/OOP/Project/GitHub/PLATFOMER_TESTING/res/lvls",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,10 +71,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\lvls" />
       <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Option" />
       <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Pause" />
       <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Death" />
-      <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\lvls" />
       <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\Objects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -354,17 +333,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
-          <line>37</line>
+          <line>34</line>
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
-          <line>38</line>
+          <line>35</line>
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/gamestates/Menu.java</url>
-          <line>39</line>
+          <line>36</line>
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
