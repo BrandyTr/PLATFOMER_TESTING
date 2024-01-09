@@ -105,7 +105,7 @@ public class Constants {
     public static int GetEnemyDmg(int enemy_type){
         switch (enemy_type) {
             case FOX:
-                return 10;
+                return 50;
             default:
                 return 0;
         }

@@ -52,8 +52,11 @@ public class Fox extends Enemy{
                         turnTowardsPlayer(player);
 //                    if(isPlayerCloseForAttack(player))
 //                        newState(ATTACK);
+                    if(aniIndex ==0)
+                        attackChecked = false;
+                    if(aniIndex == 4 && !attackChecked)
+                        checkPlayerHit(attackBox, player);
                     move(lvlData);
-                    checkEnemyHit(attackBox, player);
                     break;
             }
         }
