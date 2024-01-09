@@ -199,7 +199,7 @@ public class Playing extends State implements Statemethods {
                 case KeyEvent.VK_ESCAPE:
                 paused = !paused;
                 break;
-                case KeyEvent.VK_W:
+                case KeyEvent.VK_X:
                     player.powerAttack();
                     break;
 
