@@ -15,7 +15,7 @@ public class GameContainer extends GameObject{
         if(objType == BOX){
             initHitbox(19, 14);
             xDrawOffset = (int)(7 * Game.SCALE);
-            yDrawOffset = (int)(Game.SCALE);
+            yDrawOffset = (int)(2*Game.SCALE);
             hitbox.y += yDrawOffset;
         }else {
             initHitbox(17, 19);

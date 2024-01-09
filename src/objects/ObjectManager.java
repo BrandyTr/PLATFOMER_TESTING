@@ -202,10 +202,10 @@ public class ObjectManager {
     private void drawContainers(Graphics g, int xLvlOffset) {
         for(GameContainer gc : containers)
             if(gc.isActive()){
-                int type = 0;
+                if(gc.getObjType() == BOX)
+                    g.drawImage(containerImgs[0][gc.getAniIndex()], (int)(gc.getHitbox().x - gc.getxDrawOffset()- xLvlOffset +2*Game.SCALE), (int)(gc.getHitbox().y - gc.getyDrawOffset() - 7*Game.SCALE), CONTAINER_WIDTH, CONTAINER_HEIGHT, null);
                 if(gc.getObjType() == BARREL)
-                    type = 1;
-                g.drawImage(containerImgs[type][gc.getAniIndex()], (int)(gc.getHitbox().x - gc.getxDrawOffset()- xLvlOffset +2*Game.SCALE), (int)(gc.getHitbox().y - gc.getyDrawOffset() - 2*type*Game.SCALE), CONTAINER_WIDTH, CONTAINER_HEIGHT, null);
+                    g.drawImage(containerImgs[1][gc.getAniIndex()], (int)(gc.getHitbox().x - gc.getxDrawOffset()- xLvlOffset +2*Game.SCALE), (int)(gc.getHitbox().y - gc.getyDrawOffset() - 3*Game.SCALE), CONTAINER_WIDTH, CONTAINER_HEIGHT, null);
                 gc.drawHitbox(g, xLvlOffset);
             }
     }
