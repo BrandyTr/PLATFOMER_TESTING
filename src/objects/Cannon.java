@@ -7,8 +7,8 @@ public class Cannon extends GameObject {
     public Cannon(int x, int y, int objType){
         super(x,y,objType);
         tileY=y/Game.TILES_SIZE;
-        initHitbox(40,26);
-        hitbox.x-=(int)(4*Game.SCALE);
+        initHitbox(17,14);
+        hitbox.x+=(int)(5*Game.SCALE);
         hitbox.y+=(int)(6*Game.SCALE);
     }
 

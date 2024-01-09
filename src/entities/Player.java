@@ -121,7 +121,7 @@ public class Player extends Entity {
         if(moving){
             checkPotionTouched();
             checkSpikesTouched();
-            tileY= (int) (hitbox.y/ Game.TILES_SIZE);
+            tileY= (int) (1.05*hitbox.y/ Game.TILES_SIZE);
             if(powerAttackActive){
                 powerAttackTick++;
                 if(powerAttackTick>=35){
@@ -465,7 +465,7 @@ public class Player extends Entity {
             return;
         if(powerValue>60){
             powerAttackActive=true;
-            changePower(-60);
+            changePower(-100);
         }
     }
 }

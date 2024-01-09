@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 import static utilz.Constants.ObjectConstants.*;
 import static utilz.HelpMethods.CanCannonSeePlayer;
-//import static utilz.HelpMethods.IsProjectileHittingLevel;
+import static utilz.HelpMethods.IsProjectileHittingLevel;
 import static utilz.Constants.Projectiles.*;
 
 public class ObjectManager {
@@ -119,10 +119,10 @@ public class ObjectManager {
             if(p.isActive()){
                 p.updatePos();
                 if(p.getHitbox().intersects(player.getHitbox())){
-                    player.changeHealth(-15);
+                    player.changeHealth(-25);
                     p.setActive(false);
-               }//else if (IsProjectileHittingLevel(p,lvlData))
-                   // p.setActive(false);
+               }else if (IsProjectileHittingLevel(p,lvlData))
+                    p.setActive(false);
             }
     }
 
@@ -183,7 +183,7 @@ public class ObjectManager {
             int width= CANNON_WIDTH;
 
             if(c.getObjType()==CANNON_RIGHT){
-                x+=width;
+                x+=0.45*width;
                 width*=-1;
             }
 
