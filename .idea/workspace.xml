@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="fix hitbox cannon">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Tiles/outside_tiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Tiles/outside_tiles.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/lvls/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/lvls/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/lvls/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/lvls/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Fox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Fox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -455,6 +453,11 @@
           <url>file://$PROJECT_DIR$/src/ui/PauseOverlay.java</url>
           <line>46</line>
           <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/entities/Player.java</url>
+          <line>449</line>
+          <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>

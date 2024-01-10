@@ -54,7 +54,7 @@ public class Fox extends Enemy{
 //                        newState(ATTACK);
                     if(aniIndex ==0)
                         attackChecked = false;
-                    if(aniIndex == 4 && !attackChecked)
+                    if(aniIndex != 0 && !attackChecked)
                         checkPlayerHit(attackBox, player);
                     move(lvlData);
                     break;

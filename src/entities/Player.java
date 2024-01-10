@@ -173,7 +173,7 @@ public class Player extends Entity {
     }
 
     private void updateHealthBar() {
-        healthWidth = (int)((currentHealth / (float)maxHealth) * healthBarWidth + Game.SCALE);
+        healthWidth = (int)((currentHealth / (float)maxHealth) * healthBarWidth);
     }
 
     private void updatePowerBar(){
@@ -444,6 +444,10 @@ public class Player extends Entity {
         hitbox.x = x;
         hitbox.y = y;
         resetAttackBox();
+
+        powerAttackActive = false;
+        powerAttackTick = 0;
+        powerValue = powerMaxValue;
 
         if(!IsEntityOnFloor(hitbox, lvlData))
             inAir= true;
