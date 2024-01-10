@@ -445,6 +445,10 @@ public class Player extends Entity {
         hitbox.y = y;
         resetAttackBox();
 
+        powerAttackActive = false;
+        powerAttackTick = 0;
+        powerValue = powerMaxValue;
+
         if(!IsEntityOnFloor(hitbox, lvlData))
             inAir= true;
     }
