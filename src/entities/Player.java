@@ -173,7 +173,7 @@ public class Player extends Entity {
     }
 
     private void updateHealthBar() {
-        healthWidth = (int)((currentHealth / (float)maxHealth) * healthBarWidth + Game.SCALE);
+        healthWidth = (int)((currentHealth / (float)maxHealth) * healthBarWidth);
     }
 
     private void updatePowerBar(){
