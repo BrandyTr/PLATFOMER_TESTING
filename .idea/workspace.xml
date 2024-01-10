@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="fix hitbox cannon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Fox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Fox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/audio/level1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/level1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/audio/level2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/level2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/audio/menu.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/menu.wav" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +144,8 @@
       <workItem from="1704472538703" duration="380000" />
       <workItem from="1704473096672" duration="1332000" />
       <workItem from="1704838573748" duration="411000" />
+      <workItem from="1704867732977" duration="500000" />
+      <workItem from="1704881118370" duration="495000" />
     </task>
     <task id="LOCAL-00001" summary="fix map for player (need to fix enemy on the ground =&gt; change direction)">
       <option name="closed" value="true" />
@@ -456,7 +459,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/entities/Player.java</url>
-          <line>449</line>
+          <line>453</line>
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
