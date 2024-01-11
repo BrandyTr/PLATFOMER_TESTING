@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="fix hitbox cannon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/audio/level1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/level1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/audio/level2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/level2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/audio/menu.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/menu.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilz/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;final-fix&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/bin/IU/Programming/OOP/Project/GitHub/PLATFOMER_TESTING/res/lvls&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -456,11 +454,6 @@
           <url>file://$PROJECT_DIR$/src/ui/PauseOverlay.java</url>
           <line>46</line>
           <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/entities/Player.java</url>
-          <line>453</line>
-          <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/Main/Game.java</url>

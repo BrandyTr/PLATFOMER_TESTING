@@ -95,7 +95,7 @@ public class Constants {
     public static int GetMaxHealth(int enemy_type) {
         switch (enemy_type){
             case FOX:
-                return 15;
+                return 40;
             default:
                 return 1;
 
