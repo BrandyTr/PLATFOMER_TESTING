@@ -30,7 +30,7 @@ public class Instruction {
     public void draw(Graphics g) {
         if (visible && backgroundImg != null) {
             // Draw the instruction background
-            g.drawImage(backgroundImg, 0, 0, Game.GAME_WIDTH, Game.GAME_HEIGHT, null);
+            g.drawImage(backgroundImg, 300, 230, Game.GAME_WIDTH - 600, Game.GAME_HEIGHT - 250, null);
         }
     }
 }
