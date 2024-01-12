@@ -195,7 +195,7 @@ public class ObjectManager {
 
     private void drawTraps(Graphics g, int xLvlOffset) {
         for (Spike s : spikes) {
-            g.drawImage(spikeImg, (int) (s.getHitbox().x - xLvlOffset - 1), (int) (s.getHitbox().y - s.getyDrawOffset()), SPIKE_WIDTH / 2, SPIKE_HEIGHT / 2, null);
+            g.drawImage(spikeImg, (int) (s.getHitbox().x - xLvlOffset - 1), (int) (s.getHitbox().y - s.getyDrawOffset() - 13), SPIKE_WIDTH / 2, (int)(SPIKE_HEIGHT / 1.5 - Game.SCALE), null);
             s.drawHitbox(g, xLvlOffset);
         }
     }
