@@ -117,8 +117,8 @@ public class Constants {
             public static final int B_WIDTH_DEFAULT = 96;
             public static final int B_HEIGHT_DEFAULT = 32;
 
-            public static final int B_WIDTH = (int) (B_WIDTH_DEFAULT * 3f); //size drawing buttons
-            public static final int B_HEIGHT = (int) (B_HEIGHT_DEFAULT * 3f); //size drawing buttons
+            public static final int B_WIDTH = (int) (B_WIDTH_DEFAULT * 2f); //size drawing buttons
+            public static final int B_HEIGHT = (int) (B_HEIGHT_DEFAULT * 2f); //size drawing buttons
         }
 
         public static class PauseButtons {
@@ -129,6 +129,13 @@ public class Constants {
         public static class URMButtons {
             public static final int URM_DEFAULT_SIZE = 32;
             public static final int URM_SIZE = (int) (URM_DEFAULT_SIZE * 2f);
+        }
+
+        public static class IntructionButtons {
+            public static final int INSTRUCTION_DEFAULT_HEIGHT = 24;
+            public static final int INSTRUCTION_DEFAULT_WIDTH = 22;
+            public static final int INSTRUCTION_HEIGHT = (int) (INSTRUCTION_DEFAULT_HEIGHT * 2f);
+            public static final int INSTRUCTION_WIDTH = (int) (INSTRUCTION_DEFAULT_WIDTH * 2f);
         }
 
         public static class VolumeButtons{
