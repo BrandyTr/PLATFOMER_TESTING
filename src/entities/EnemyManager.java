@@ -48,8 +48,8 @@ public class EnemyManager {
         for (Fox f : foxes)
             if(f. isActive()) {
             g.drawImage(foxArr[f.getEmenyState()][f.getAniIndex()], (int) (f.getHitbox().x - xLvlOffset -FOX_DRAWOFFSET_X + f.flipX()) , (int) (f.getHitbox().y - FOX_DRAWOFFSET_Y), FOX_WIDTH * f.flipW(), FOX_HEIGHT, null);
-            f.drawHitbox(g, xLvlOffset);
-            f.drawAttackBox(g, xLvlOffset);
+            //f.drawHitbox(g, xLvlOffset);
+            //f.drawAttackBox(g, xLvlOffset);
         }
     }
 

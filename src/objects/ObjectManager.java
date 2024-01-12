@@ -189,14 +189,14 @@ public class ObjectManager {
             }
 
             g.drawImage(cannonImgs[c.getAniIndex()],x,(int)(c.getHitbox().y),width/2, CANNON_HEIGHT/2,null);
-            c.drawHitbox(g, xLvlOffset);
+            //c.drawHitbox(g, xLvlOffset);
         }
     }
 
     private void drawTraps(Graphics g, int xLvlOffset) {
         for (Spike s : spikes) {
             g.drawImage(spikeImg, (int) (s.getHitbox().x - xLvlOffset - 1), (int) (s.getHitbox().y - s.getyDrawOffset() - 13), SPIKE_WIDTH / 2, (int)(SPIKE_HEIGHT / 1.5 - Game.SCALE), null);
-            s.drawHitbox(g, xLvlOffset);
+            //s.drawHitbox(g, xLvlOffset);
         }
     }
 
@@ -207,7 +207,7 @@ public class ObjectManager {
                     g.drawImage(containerImgs[0][gc.getAniIndex()], (int)(gc.getHitbox().x - gc.getxDrawOffset()- xLvlOffset +2*Game.SCALE), (int)(gc.getHitbox().y - gc.getyDrawOffset() - 7*Game.SCALE), CONTAINER_WIDTH, CONTAINER_HEIGHT, null);
                 if(gc.getObjType() == BARREL)
                     g.drawImage(containerImgs[1][gc.getAniIndex()], (int)(gc.getHitbox().x - gc.getxDrawOffset()- xLvlOffset +2*Game.SCALE), (int)(gc.getHitbox().y - gc.getyDrawOffset() - 3*Game.SCALE), CONTAINER_WIDTH, CONTAINER_HEIGHT, null);
-                gc.drawHitbox(g, xLvlOffset);
+                //gc.drawHitbox(g, xLvlOffset);
             }
     }
 
@@ -218,7 +218,7 @@ public class ObjectManager {
                 if(p.getObjType() == RED_POTION)
                     type = 1;
                 g.drawImage(potionImgs[type][p.getAniIndex()], (int)(p.getHitbox().x - p.getxDrawOffset()- xLvlOffset + Game.SCALE), (int)(p.getHitbox().y - p.getyDrawOffset()- 0.5*Game.SCALE), POTION_WIDTH, POTION_HEIGHT, null);
-                p.drawHitbox(g, xLvlOffset);
+                //p.drawHitbox(g, xLvlOffset);
             }
     }
 
