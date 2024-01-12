@@ -9,7 +9,7 @@ public class GameWindow {
 
         jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jframe.add(gamePanel);
-        jframe.setTitle("Platformer by Brandy");
+        jframe.setTitle("Dreamy Land");
 
         jframe.setResizable(false);
         jframe.pack(); //fit the size to the preferred size
