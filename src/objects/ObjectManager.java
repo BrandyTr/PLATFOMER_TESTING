@@ -65,6 +65,7 @@ public class ObjectManager {
                     if(gc.getObjType() == BARREL)
                         type = 1;
                     potions.add(new Potion((int)(gc.getHitbox().x + gc.getHitbox().width / 2), (int)(gc.getHitbox().y - gc.getHitbox().height/2), type));
+                    potions.add(new Potion((int)(gc.getHitbox().x + gc.getHitbox().width / 1.5), (int)(gc.getHitbox().y - gc.getHitbox().height/1.5), type));
                     return;
 
                 }
@@ -194,7 +195,7 @@ public class ObjectManager {
 
     private void drawTraps(Graphics g, int xLvlOffset) {
         for (Spike s : spikes) {
-            g.drawImage(spikeImg, (int) (s.getHitbox().x - xLvlOffset), (int) (s.getHitbox().y - s.getyDrawOffset()), SPIKE_WIDTH / 2, SPIKE_HEIGHT / 2, null);
+            g.drawImage(spikeImg, (int) (s.getHitbox().x - xLvlOffset - 1), (int) (s.getHitbox().y - s.getyDrawOffset()), SPIKE_WIDTH / 2, SPIKE_HEIGHT / 2, null);
             s.drawHitbox(g, xLvlOffset);
         }
     }
