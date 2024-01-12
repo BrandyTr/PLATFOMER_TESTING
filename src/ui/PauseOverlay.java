@@ -85,6 +85,7 @@ public class PauseOverlay {
             playing.resetAll();
             playing.setGamestate(Gamestate.MENU);
             playing.unPauseGame();
+            playing.getLevelManager().resetLevelIndex();
         } else if (isIn(e, replayB)) {
             if (replayB.isMousePressed()) {
                 playing.resetAll();

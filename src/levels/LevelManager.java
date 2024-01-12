@@ -81,4 +81,8 @@ public class LevelManager {
     public int getLvlIndex() {
         return lvlIndex;
     }
+
+    public void resetLevelIndex() {
+        lvlIndex = 0;
+    }
 }
