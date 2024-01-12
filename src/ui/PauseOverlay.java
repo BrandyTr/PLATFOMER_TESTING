@@ -31,7 +31,7 @@ public class PauseOverlay {
         int menuX = (int) (250 * 2f);
         int replayX = (int) (300 * 2f);
         int unpausedX = (int) (350 * 2f);
-        int bY = (int) (270 * 2f);
+        int bY = (int) (270 * 2f - 25);
 
         menuB = new UrmButton(menuX, bY, URM_SIZE, URM_SIZE,2);
         replayB = new UrmButton(replayX, bY, URM_SIZE, URM_SIZE,1);
@@ -44,7 +44,7 @@ public class PauseOverlay {
         bgW = (int)(backgroundImg.getWidth() * 1.5f);
         bgH = (int)(backgroundImg.getHeight() * 1.5f);
         bgX = Game.GAME_WIDTH / 2 - bgW / 2; //center - width/2
-        bgY = (int) (25 * 3f); //test, if we want it up(decrease num), down(increase num)
+        bgY = (int) (15 * 3f); //test, if we want it up(decrease num), down(increase num)
     }
 
     public void update() {

@@ -24,14 +24,14 @@ public class AudioOptions {
 
     private void createVolumeButton() { //Slider pos
         int vX = (int) (240 * 2f - 5);
-        int vY = (int) (225 * 2f + 5);
+        int vY = (int) (225 * 2f - 15);
         volumeButton = new VolumeButton(vX, vY, SLIDER_WIDTH, VOLUME_HEIGHT);
     }
 
     private void createSoundButtons() {
         int soundX = (int) (340 * 2f);
-        int musicY = (int) (130 * 2f);
-        int sfxY = (int) (162 * 2f);
+        int musicY = (int) (130 * 2f - 27);
+        int sfxY = (int) (162 * 2f - 27);
         musicButton = new SoundButton(soundX, musicY, SOUND_SIZE, SOUND_SIZE);
         sfxButton = new SoundButton(soundX, sfxY, SOUND_SIZE, SOUND_SIZE);
     }
