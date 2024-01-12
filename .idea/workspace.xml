@@ -6,22 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d17856cd-1ae5-47eb-9921-edc069155bbf" name="Changes" comment="fix hitbox cannon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/ObjectManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/Objects/ObjectManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/GameOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/GameOptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/gamestates/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/AudioOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/AudioOptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/MenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/MenuButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/PauseOverlay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/ui/VolumeButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$ObjectConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/Constants$ObjectConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/LoadSave.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/utilz/LoadSave.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Menu/menu_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gamestates/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gamestates/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/AudioOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AudioOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/PauseOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/PauseOverlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/VolumeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/VolumeButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilz/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilz/LoadSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilz/LoadSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/lvls/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/lvls/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/lvls/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLATFOMER_TESTING/lvls/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Pause/sound_button.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Pause/sound_button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Tiles/outside_tiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/Tiles/outside_tiles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/lvls/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/lvls/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/lvls/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/lvls/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/lvls/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/lvls/3.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "merge-final-ui-",
+    "git-widget-placeholder": "test__map",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/admin/Desktop/PLATFOMER_TESTING/res/Menu",
     "node.js.detected.package.eslint": "true",
@@ -91,11 +82,11 @@
       <recent name="C:\Users\admin\Desktop\PLATFOMER_TESTING\res\Death" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\Tiles" />
       <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\lvls" />
+      <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\Pause" />
+      <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\Tiles" />
       <recent name="D:\bin\IU\Programming\OOP\Project\GitHub\PLATFOMER_TESTING\res\lvls" />
       <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\audio" />
-      <recent name="C:\Users\Admin\Documents\GitHub\PLATFOMER_TESTING\res\Levels" />
     </key>
   </component>
   <component name="RunManager">
@@ -159,6 +150,8 @@
       <workItem from="1704838573748" duration="411000" />
       <workItem from="1704867732977" duration="500000" />
       <workItem from="1704881118370" duration="495000" />
+      <workItem from="1705049695922" duration="748000" />
+      <workItem from="1705052811806" duration="2999000" />
     </task>
     <task id="LOCAL-00001" summary="fix map for player (need to fix enemy on the ground =&gt; change direction)">
       <option name="closed" value="true" />
