@@ -98,8 +98,8 @@ public class Menu extends State implements Statemethods {
             }
         }
 
-        if (isIn(e, instructionButton))
-            instructionButton.setMousePressed(true);
+//        if (isIn(e, instructionButton))
+//            instructionButton.setMousePressed(true);
 
     }
 
@@ -117,11 +117,11 @@ public class Menu extends State implements Statemethods {
             }
         }
 
-        if (isIn(e, instructionButton)) {
-            // Toggle the visibility of the instruction screen
-            instruction.setVisible(!instruction.isVisible());
-            instructionButton.setMousePressed(false); // Reset the button state
-        }
+//        if (isIn(e, instructionButton)) {
+//            // Toggle the visibility of the instruction screen
+//            instruction.setVisible(!instruction.isVisible());
+//            instructionButton.setMousePressed(false); // Reset the button state
+//        }
 
 
         resetButtons();
@@ -147,8 +147,10 @@ public class Menu extends State implements Statemethods {
 
         if (isIn(e, instructionButton)) {
             instructionButton.setMouseOver(true);
+            instruction.setVisible(true);  // Show instruction image
         } else {
             instructionButton.setMouseOver(false);
+            instruction.setVisible(false); // Hide instruction image
         }
     }
 
