@@ -15,6 +15,6 @@ It's more than just a game; it's an expedition to enhance your Java skills, fost
 ## **Details About the Project**🛠️
 
 - Detailed report: https://bit.ly/ReportDreamyLand
-- Game play video demo:
+- Game play video demo: https://bit.ly/DreamyLandPlayingDemo
 
 ## Author
