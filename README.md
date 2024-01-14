@@ -18,4 +18,7 @@ It's more than just a game; it's an expedition to enhance your Java skills, fost
 - Game play video demo: https://bit.ly/DreamyLandPlayingDemo
 
 ## Author👥
-
+- [@BrandyTr](https://github.com/BrandyTr)
+- [@NGB-38](https://github.com/NGB-38)
+- [@MinhTris1705](https://github.com/MinhTris1705)
+- [@codequaimetqua](https://github.com/codequaimetqua)
